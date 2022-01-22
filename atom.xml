@@ -92,21 +92,18 @@
   </entry>
   
   <entry>
-    <title>tmux配置文件</title>
-    <link href="https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/"/>
-    <id>https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/</id>
+    <title>tmux常用命令</title>
+    <link href="https://axueli.github.io/2022/01/20/tmux/"/>
+    <id>https://axueli.github.io/2022/01/20/tmux/</id>
     <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:24:08.275Z</updated>
+    <updated>2022-01-21T14:29:32.432Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;set-option -g status-keys vi
-setw -g mode-keys vi
-
-setw -g</summary>
+    <summary type="html">&lt;h4 id=&quot;tmux常用命令&quot;&gt;&lt;a href=&quot;#tmux常用命令&quot; class=&quot;headerlink&quot; title=&quot;tmux常用命令&quot;&gt;&lt;/a&gt;tmux常用命令&lt;/h4&gt;&lt;h5 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -145,18 +142,21 @@ setw -g</summary>
   </entry>
   
   <entry>
-    <title>tmux常用命令</title>
-    <link href="https://axueli.github.io/2022/01/20/tmux/"/>
-    <id>https://axueli.github.io/2022/01/20/tmux/</id>
+    <title>tmux配置文件</title>
+    <link href="https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/"/>
+    <id>https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/</id>
     <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:29:32.432Z</updated>
+    <updated>2022-01-21T14:24:08.275Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h4 id=&quot;tmux常用命令&quot;&gt;&lt;a href=&quot;#tmux常用命令&quot; class=&quot;headerlink&quot; title=&quot;tmux常用命令&quot;&gt;&lt;/a&gt;tmux常用命令&lt;/h4&gt;&lt;h5 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;set-option -g status-keys vi
+setw -g mode-keys vi
+
+setw -g</summary>
         
       
     
