@@ -4,11 +4,86 @@
   
     
     <entry>
+      <title>Git基础教程</title>
+      <link href="/2022/01/22/git/"/>
+      <url>/2022/01/22/git/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Git教程"><a href="#Git教程" class="headerlink" title="Git教程"></a>Git教程</h4><h5 id="git基本概念"><a href="#git基本概念" class="headerlink" title="git基本概念"></a>git基本概念</h5><ul><li>工作区：仓库的目录。工作区是独立于各个分支的。</li><li>暂存区：数据暂时存放的区域，类似于工作区写入版本库前的缓存区。暂存区是独立于各个分支的。</li><li>版本库：存放所有已经提交到本地仓库的代码版本</li><li>版本结构：树结构，树中每个节点代表一个代码版本。<h5 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h5><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>git config –global user.name xxx</td><td>设置全局用户名，信息记录在~/.gitconfig文件中</td></tr><tr><td>git config –global user.email <a href="mailto:xxx@xxx.com">xxx@xxx.com</a></td><td>设置全局邮箱地址，信息记录在~/.gitconfig文件中</td></tr><tr><td>git init</td><td>将当前目录配置成git仓库，信息记录在隐藏的.git文件夹中</td></tr><tr><td>git add XX</td><td>将XX文件添加到暂存区</td></tr><tr><td>git add .</td><td>将所有待加入暂存区的文件加入暂存区</td></tr><tr><td>git rm –cached XX</td><td>将文件从仓库索引目录中删掉</td></tr><tr><td>git commit -m</td><td>“给自己看的备注信息”：将暂存区的内容提交到当前分支</td></tr><tr><td>git status</td><td>查看仓库状态</td></tr><tr><td>git diff XX</td><td>查看XX文件相对于暂存区修改了哪些内容</td></tr><tr><td>git log</td><td>查看当前分支的所有版本</td></tr><tr><td>git reflog</td><td>查看HEAD指针的移动历史（包括被回滚的版本）</td></tr><tr><td>git reset –hard HEAD^ 或 git reset –hard HEAD~</td><td>将代码库回滚到上一个版本</td></tr><tr><td>git reset –hard HEAD^^</td><td>往上回滚两次，以此类推</td></tr><tr><td>git reset –hard HEAD~100</td><td>往上回滚100个版本</td></tr><tr><td>git reset –hard 版本号</td><td>回滚到某一特定版本</td></tr><tr><td>git checkout — XX或git restore XX</td><td>将XX文件尚未加入暂存区的修改全部撤销</td></tr><tr><td>git remote add origin <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git</td><td>将本地仓库关联到远程仓库</td></tr><tr><td>git push -u (第一次需要-u以后不需要)</td><td>将当前分支推送到远程仓库</td></tr><tr><td>git push origin branch_name</td><td>将本地的某个分支推送到远程仓库</td></tr><tr><td>git clone <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git</td><td>将远程仓库XXX下载到当前目录下</td></tr><tr><td>git checkout -b branch_name</td><td>创建并切换到branch_name这个分支</td></tr><tr><td>git branch</td><td>查看所有分支和当前所处分支</td></tr><tr><td>git checkout branch_name</td><td>切换到branch_name这个分支</td></tr><tr><td>git merge branch_name</td><td>将分支branch_name合并到当前分支上</td></tr><tr><td>git branch -d branch_name</td><td>删除本地仓库的branch_name分支</td></tr><tr><td>git branch branch_name</td><td>创建新分支</td></tr><tr><td>git push –set-upstream origin branch_name</td><td>设置本地的branch_name分支对应远程仓库的branch_name分支</td></tr><tr><td>git push -d origin branch_name</td><td>删除远程仓库的branch_name分支</td></tr><tr><td>git pull</td><td>将远程仓库的当前分支与本地仓库的当前分支合并</td></tr><tr><td>git pull origin branch_name</td><td>将远程仓库的branch_name分支与本地仓库的当前分支合并</td></tr><tr><td>git branch –set-upstream-to=origin/branch_name1 branch_name2</td><td>将远程的branch_name1分支与本地的branch_name2分支对应</td></tr><tr><td>git checkout -t origin/branch_name</td><td>将远程的branch_name分支拉取到本地</td></tr><tr><td>git stash</td><td>将工作区和暂存区中尚未提交的修改存入栈中</td></tr><tr><td>git stash apply</td><td>将栈顶存储的修改恢复到当前分支，但不删除栈顶元素</td></tr><tr><td>git stash drop</td><td>删除栈顶存储的修改</td></tr><tr><td>git stash pop</td><td>将栈顶存储的修改恢复到当前分支，同时删除栈顶元素</td></tr><tr><td>git stash list</td><td>查看栈中所有元素</td></tr></tbody></table></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>管道 及 其他</title>
+      <link href="/2022/01/21/thrift/"/>
+      <url>/2022/01/21/thrift/</url>
+      
+        <content type="html"><![CDATA[<h4 id="管道-及-其他"><a href="#管道-及-其他" class="headerlink" title="管道 及 其他"></a>管道 及 其他</h4><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><p>管道类似于文件重定向，可以将前一个命令的stdout重定向到下一个命令的stdin。</p><h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ol><li>管道命令仅处理stdout，会忽略stderr。</li><li>管道右边的命令必须能接受stdin。</li><li>多个管道命令可以串联。<h5 id="与文件重定向的区别"><a href="#与文件重定向的区别" class="headerlink" title="与文件重定向的区别"></a>与文件重定向的区别</h5></li></ol><ul><li>文件重定向左边为命令，右边为文件。</li><li>管道左右两边均为命令，左边有stdout，右边有stdin。<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5>统计当前目录下所有python文件的总行数，其中find、xargs、wc等命令可以参考常用命令这一节内容。<pre class="line-numbers language-none"><code class="language-none">find . -name '*.py' | xargs cat | wc -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5>Linux系统中会用很多环境变量来记录配置信息。<br>环境变量类似于全局变量，可以被各个进程访问到。我们可以通过修改环境变量来方便地修改系统配置。</li></ul><h5 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h5><p>列出当前环境下的所有环境变量：</p><pre class="line-numbers language-none"><code class="language-none">env  # 显示当前用户的变量set  # 显示当前shell的变量，包括当前用户的变量;export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>输出某个环境变量的值：</p><pre class="line-numbers language-none"><code class="language-none">echo $PATH<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>修改<br>环境变量的定义、修改、删除操作可以参考3. shell语法——变量这一节的内容。</p><p>为了将对环境变量的修改应用到未来所有环境下，可以将修改命令放到<del>/.bashrc文件中。<br>修改完</del>/.bashrc文件后，记得执行source ~/.bashrc，来将修改应用到当前的bash环境下。</p><p>为何将修改命令放到~/.bashrc，就可以确保修改会影响未来所有的环境呢？</p><ul><li>每次启动bash，都会先执行~/.bashrc。</li><li>每次ssh登陆远程服务器，都会启动一个bash命令行给我们。</li><li>每次tmux新开一个pane，都会启动一个bash命令行给我们。</li><li>所以未来所有新开的环境都会加载我们修改的内容。<h5 id="常见环境变量"><a href="#常见环境变量" class="headerlink" title="常见环境变量"></a>常见环境变量</h5><table><thead><tr><th>路径</th><th></th></tr></thead><tbody><tr><td>HOME</td><td>用户的家目录。</td></tr><tr><td>PATH</td><td>可执行文件（命令）的存储路径。路径与路径之间用:分隔。当某个可执行文件同时出现在多个路径中时，会选择从左到右数第一个路径中的执行。下列所有存储路径的环境变量，均采用从左到右的优先顺序。</td></tr><tr><td>LD_LIBRARY_PATH</td><td>用于指定动态链接库(.so文件)的路径，其内容是以冒号分隔的路径列表。</td></tr><tr><td>C_INCLUDE_PATH</td><td>C语言的头文件路径，内容是以冒号分隔的路径列表。</td></tr><tr><td>CPLUS_INCLUDE_PATH</td><td>CPP的头文件路径，内容是以冒号分隔的路径列表。</td></tr><tr><td>PYTHONPATH</td><td>Python导入包的路径，内容是以冒号分隔的路径列表。</td></tr><tr><td>JAVA_HOME</td><td>jdk的安装目录。</td></tr><tr><td>CLASSPATH</td><td>存放Java导入类的路径，内容是以冒号分隔的路径列表。</td></tr></tbody></table><h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><h5 id="系统状况"><a href="#系统状况" class="headerlink" title="系统状况"></a>系统状况</h5><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>top</td><td>查看所有进程的信息（Linux的任务管理器）</td></tr><tr><td>打开top后，输入M</td><td>按使用内存排序</td></tr><tr><td>打开top后，输入P</td><td>按使用CPU排序</td></tr><tr><td>打开top后，输入q</td><td>退出</td></tr><tr><td>df -h</td><td>查看硬盘使用情况</td></tr><tr><td>free -h</td><td>查看内存使用情况</td></tr><tr><td>du -sh</td><td>查看当前目录占用的硬盘空间</td></tr><tr><td>ps aux</td><td>查看所有进程</td></tr><tr><td>kill -9 pid</td><td>杀死编号为pid的进程</td></tr><tr><td>传递某个具体的信号</td><td>kill -s SIGTERM pid</td></tr><tr><td>netstat -nt</td><td>查看所有网络连接</td></tr><tr><td>w</td><td>列出当前登陆的用户</td></tr><tr><td>ping <a href="http://www.baidu.com/">www.baidu.com</a></td><td>检查是否连网</td></tr></tbody></table></li></ul><h5 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h5><table><thead><tr><th>命令</th><th>作用</th></tr></thead><tbody><tr><td>chmod</td><td>修改文件权限</td></tr><tr><td>chmod +x xxx</td><td>给xxx添加可执行权限</td></tr><tr><td>chmod -x xxx</td><td>去掉xxx的可执行权限</td></tr><tr><td>chmod 777 xxx</td><td>将xxx的权限改成777</td></tr><tr><td>chmod 777 xxx -R</td><td>递归修改整个文件夹的权限</td></tr></tbody></table><h5 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h5><ol><li>find /path/to/directory/ -name ‘<em>.py’    搜索某个文件路径下的所有</em>.py文件</li><li>grep xxx        从stdin中读入若干行数据，如果某行中包含xxx，则输出该行；否则忽略该行。</li><li>wc        统计行数、单词数、字节数<ul><li>既可以从stdin中直接读入内容；也可以在命令行参数中传入文件名列表；</li><li>wc -l        统计行数</li><li>wc -w        统计单词数</li><li>wc -c        统计字节数</li></ul></li><li>tree        展示当前目录的文件结构<ul><li>tree /path/to/directory/    展示某个目录的文件结构</li><li>tree -a    展示隐藏文件</li></ul></li><li>ag xxx    搜索当前目录下的所有文件，检索xxx字符串</li><li>cut        分割一行内容<ul><li>从stdin中读入多行数据</li><li>echo $PATH | cut -d ‘:’ -f 3,5    输出PATH用:分割后第3、5列数据</li><li>echo $PATH | cut -d ‘:’ -f 3-5    输出PATH用:分割后第3-5列数据</li><li>echo $PATH | cut -c 3,5    输出PATH的第3、5个字符</li><li>echo $PATH | cut -c 3-5    输出PATH的第3-5个字符</li></ul></li><li>sort        将每行内容按字典序排序<ul><li>可以从stdin中读取多行数据</li><li>可以从命令行参数中读取文件名列表</li></ul></li><li>xargs    将stdin中的数据用空格或回车分割成命令行参数<ul><li>find . -name ‘*.py’ | xargs cat | wc -l    统计当前目录下所有python文件的总行数<h5 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h5></li></ul></li><li>more        浏览文件内容<ul><li>回车    下一行</li><li>空格    下一页</li><li>b        上一页</li><li>q        退出</li></ul></li><li>less        与more类似，功能更全<ul><li>回车    下一行</li><li>y        上一行</li><li>Page Down        下一页</li><li>Page Up    上一页</li><li>q        退出</li></ul></li><li>head -3 xxx        展示xxx的前3行内容<ul><li>同时支持从stdin读入内容</li></ul></li><li>tail -3 xxx        展示xxx末尾3行内容<ul><li>同时支持从stdin读入内容<h5 id="用户相关"><a href="#用户相关" class="headerlink" title="用户相关"></a>用户相关</h5></li></ul></li><li>history        展示当前用户的历史操作。内容存放在~/.bash_history中<h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5></li><li>md5sum        计算md5哈希值<ul><li>可以从stdin读入内容</li><li>也可以在命令行参数中传入文件名列表；</li></ul></li><li>time command        统计command命令的执行时间</li><li>ipython3        交互式python3环境。可以当做计算器，或者批量管理文件。<ul><li>! echo “Hello World”        !表示执行shell脚本</li></ul></li><li>watch -n 0.1 command        每0.1秒执行一次command命令</li><li>tar        压缩文件<ul><li>tar -zcvf xxx.tar.gz /path/to/file/*        压缩</li><li>tar -zxvf xxx.tar.gz        解压缩</li></ul></li><li>diff xxx yyy        查找文件xxx与yyy的不同点<h5 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h5></li><li>sudo command        以root身份执行command命令</li><li>apt-get install xxx        安装软件</li><li>pip install xxx –user –upgrade        安装python包</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker基础教程</title>
       <link href="/2022/01/20/docker/"/>
       <url>/2022/01/20/docker/</url>
       
         <content type="html"><![CDATA[<h4 id="Docker基础教程"><a href="#Docker基础教程" class="headerlink" title="Docker基础教程"></a>Docker基础教程</h4><h5 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h5><p>按顺序输入命令</p><pre class="line-numbers language-none"><code class="language-none">1. sudo apt-get update2. sudo apt-get install \    ca-certificates \    curl \    gnupg \    lsb-release3.curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg4.echo \  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null5. sudo apt-get update6. sudo apt-get install docker-ce docker-ce-cli containerd.io<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="基础配置"><a href="#基础配置" class="headerlink" title="基础配置"></a>基础配置</h5><p>将当前用户添加到docker用户组<br>为了避免每次使用docker命令都需要加上sudo权限，可以将当前用户加入安装中自动创建的docker用户组(可以参考<a href="https://docs.docker.com/engine/install/linux-postinstall/">官方文档</a> )</p><pre class="line-numbers language-none"><code class="language-none">sudo usermod -aG docker $USER<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id="镜像（images）"><a href="#镜像（images）" class="headerlink" title="镜像（images）"></a>镜像（images）</h5><table><thead><tr><th>镜像指令</th><th>作用</th></tr></thead><tbody><tr><td>docker pull ubuntu:20.04</td><td>拉取一个镜像</td></tr><tr><td>docker images</td><td>列出本地所有镜像</td></tr><tr><td>docker image rm ubuntu:20.04 或 docker rmi ubuntu:20.04</td><td>删除镜像ubuntu:20.04</td></tr><tr><td>docker [container] commit CONTAINER IMAGE_NAME:TAG</td><td>创建某个container的镜像</td></tr><tr><td>docker save -o ubuntu_20_04.tar ubuntu:20.04</td><td>将镜像ubuntu:20.04导出到本地文件ubuntu_20_04.tar中</td></tr><tr><td>docker load -i ubuntu_20_04.tar</td><td>将镜像ubuntu:20.04从本地文件ubuntu_20_04.tar中加载出来</td></tr></tbody></table><h5 id="容器-container"><a href="#容器-container" class="headerlink" title="容器(container)"></a>容器(container)</h5><table><thead><tr><th>基础指令</th><th>作用</th></tr></thead><tbody><tr><td>docker [container] create -it ubuntu:20.04</td><td>利用镜像ubuntu:20.04创建一个容器。</td></tr><tr><td>docker ps</td><td>查看所有正在运行的容器</td></tr><tr><td>docker ps -a</td><td>查看本地的所有容器</td></tr><tr><td>docker [container] start CONTAINER</td><td>启动容器 （CONTAINER可以为id，也可以是名称）</td></tr><tr><td>docker [container] stop CONTAINER</td><td>停止容器</td></tr><tr><td>docker [container] restart CONTAINER</td><td>重启容器</td></tr><tr><td>docker [contaienr] run -it ubuntu:20.04</td><td>创建进入并启动一个容器</td></tr><tr><td>docker [contaienr] run -itd ubuntu:20.04</td><td>创建并启动一个容器</td></tr><tr><td>docker [container] attach CONTAINER</td><td>进入容器</td></tr><tr><td>docker [container] exec CONTAINER COMMAND</td><td>在容器中执行命令</td></tr><tr><td>docker [container] rm CONTAINER</td><td>删除容器(容器需要先关闭，才能删除)</td></tr><tr><td>docker container prune</td><td>删除所有已停止的容器</td></tr><tr><td>docker export -o xxx.tar CONTAINER</td><td>将容器CONTAINER导出到本地文件xxx.tar中</td></tr><tr><td>docker import xxx.tar image_name:tag</td><td>将本地文件xxx.tar导入成镜像，并将镜像命名为image_name:tag</td></tr><tr><td>docker top CONTAINER</td><td>查看某个容器内的所有进程</td></tr><tr><td>docker stats</td><td>查看所有容器的统计信息，包括CPU、内存、存储、网络等信息 使用 Ctrl + c 退出</td></tr><tr><td>docker cp xxx CONTAINER:xxx 或 docker cp CONTAINER:xxx xxx：</td><td>在本地和容器间复制文件</td></tr><tr><td>docker rename CONTAINER1 CONTAINER2</td><td>重命名容器</td></tr><tr><td>docker update CONTAINER –memory 500MB</td><td>修改容器限制</td></tr><tr><td>先按Ctrl + p</td><td>再按Ctrl + q!可以挂起容器</td></tr><tr><td>Ctrl + d</td><td>退出后会关闭容</td></tr></tbody></table><ul><li>容器复制文件不需要加上 -r ，而本地复制文件夹需要加上 -r</li><li>docker export/import与docker save/load的区别：</li></ul><ol><li>export/import  会丢弃历史记录和元数据信息，仅保存容器当时的快照状态</li><li>save/load          会保存完整记录，体积更大</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ssh教程</title>
+      <link href="/2022/01/19/ssh/"/>
+      <url>/2022/01/19/ssh/</url>
+      
+        <content type="html"><![CDATA[<h4 id="ssh教程"><a href="#ssh教程" class="headerlink" title="ssh教程"></a>ssh教程</h4><h5 id="ssh登录"><a href="#ssh登录" class="headerlink" title="ssh登录"></a>ssh登录</h5><h6 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h6><p>远程登录服务器：</p><pre class="line-numbers language-none"><code class="language-none">ssh user@hostname<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><pre class="line-numbers language-none"><code class="language-none">user: 用户名hostname: IP地址或域名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>第一次登录时会提示：</p><pre class="line-numbers language-none"><code class="language-none">The authenticity of host '123.57.47.211 (123.57.47.211)' can't be established.ECDSA key fingerprint is SHA256:iy237yysfCe013/l+kpDGfEG9xxHxm0dnxnAbJTPpG8.Are you sure you want to continue connecting (yes/no/[fingerprint])?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>输入yes，然后回车即可。<br>这样会将该服务器的信息记录在~/.ssh/known_hosts文件中。</p><p>然后输入密码即可登录到远程服务器中。<br>默认登录端口号为22。如果想登录某一特定端口：</p><pre class="line-numbers language-none"><code class="language-none">ssh user@hostname -p 22<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h6 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h6><p>创建文件 ~/.ssh/config。</p><p>然后在文件中输入：</p><pre class="line-numbers language-none"><code class="language-none">Host myserver1    HostName IP地址或域名    User 用户名Host myserver2    HostName IP地址或域名    User 用户名<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>之后再使用服务器时，可以直接使用别名myserver1、myserver2。</p><p>密钥登录<br>创建密钥：</p><pre class="line-numbers language-none"><code class="language-none">ssh-keygen<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>然后一直回车即可。</p><p>执行结束后，~/.ssh/目录下会多两个文件：</p><pre class="line-numbers language-none"><code class="language-none">id_rsa：私钥id_rsa.pub：公钥<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>之后想免密码登录哪个服务器，就将公钥传给哪个服务器即可。</p><p>例如，想免密登录myserver服务器。则将公钥中的内容，复制到myserver中的~/.ssh/authorized_keys文件里即可。</p><p>也可以使用如下命令一键添加公钥：</p><pre class="line-numbers language-none"><code class="language-none">ssh-copy-id myserver<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h6 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h6><p>命令格式：</p><pre class="line-numbers language-none"><code class="language-none">ssh user@hostname command<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>例如：</p><pre class="line-numbers language-none"><code class="language-none">ssh user@hostname ls -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>或者</p><pre class="line-numbers language-none"><code class="language-none"># 单引号中的$i可以求值ssh myserver 'for ((i = 0; i &lt; 10; i ++ )) do echo $i; done'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>或者</p><pre class="line-numbers language-none"><code class="language-none"># 双引号中的$i不可以求值ssh myserver "for ((i = 0; i &lt; 10; i ++ )) do echo $i; done"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h5 id="scp传文件"><a href="#scp传文件" class="headerlink" title="scp传文件"></a>scp传文件</h5><h6 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h6><p>命令格式：</p><pre class="line-numbers language-none"><code class="language-none">scp source destination<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将source路径下的文件复制到destination中</p><p>一次复制多个文件：</p><pre class="line-numbers language-none"><code class="language-none">scp source1 source2 destination<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>复制文件夹：</p><pre class="line-numbers language-none"><code class="language-none">scp -r ~/tmp myserver:/home/acs/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将本地家目录中的tmp文件夹复制到myserver服务器中的/home/acs/目录下。</p><pre class="line-numbers language-none"><code class="language-none">scp -r ~/tmp myserver:homework/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将本地家目录中的tmp文件夹复制到myserver服务器中的~/homework/目录下。</p><pre class="line-numbers language-none"><code class="language-none">scp -r myserver:homework .<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>将myserver服务器中的~/homework/文件夹复制到本地的当前路径下。</p><p>指定服务器的端口号：</p><pre class="line-numbers language-none"><code class="language-none">scp -P 22 source1 source2 destination<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>注意： scp的-r -P等参数尽量加在source和destination之前。</li></ul><h6 id="使用scp配置其他服务器的vim和tmux"><a href="#使用scp配置其他服务器的vim和tmux" class="headerlink" title="使用scp配置其他服务器的vim和tmux"></a>使用scp配置其他服务器的vim和tmux</h6><pre class="line-numbers language-none"><code class="language-none">scp ~/.vimrc ~/.tmux.conf myserver:<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
       
       
       <categories>
@@ -81,6 +156,31 @@
     
     
     <entry>
+      <title>Vim常用命令</title>
+      <link href="/2022/01/17/vim/"/>
+      <url>/2022/01/17/vim/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Vim常用命令"><a href="#Vim常用命令" class="headerlink" title="Vim常用命令"></a>Vim常用命令</h4><h5 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h5><ol><li>命令行模式下的文本编辑器。</li><li>根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。</li><li>使用方式：vim filename<br>如果已有该文件，则打开它。<br>如果没有该文件，则打开个一个新的文件，并命名为filename<h5 id="模式："><a href="#模式：" class="headerlink" title="模式："></a>模式：</h5><h6 id="一般命令模式"><a href="#一般命令模式" class="headerlink" title="一般命令模式"></a>一般命令模式</h6>默认模式。命令输入方式：类似于打游戏放技能，按不同字符，即可进行不同操作。可以复制、粘贴、删除文本等。<h6 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h6></li><li>在一般命令模式里按下i，会进入编辑模式。</li><li>按下ESC会退出编辑模式，返回到一般命令模式。<h6 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h6>在一般命令模式里按下:/?三个字母中的任意一个，会进入命令行模式。命令行在最下面。<br>可以查找、替换、保存、退出、配置编辑器等。</li></ol><h5 id="操作："><a href="#操作：" class="headerlink" title="操作："></a>操作：</h5><table><thead><tr><th>vim指令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>进入编辑模式</td></tr><tr><td>ESC</td><td>进入一般命令模式</td></tr><tr><td>h 或 左箭头键</td><td>光标向左移动一个字符</td></tr><tr><td>j 或 向下箭头</td><td>光标向下移动一个字符</td></tr><tr><td>k 或 向上箭头</td><td>光标向上移动一个字符</td></tr><tr><td>l 或 向右箭头</td><td>光标向右移动一个字符</td></tr><tr><td>n<space></space></td><td>n表示数字，按下数字后再按空格，光标会向右移动这一行的n个字符</td></tr><tr><td>0 或 功能键[Home]</td><td>光标移动到本行开头</td></tr><tr><td>$ 或 功能键[End]</td><td>光标移动到本行末尾</td></tr><tr><td>G</td><td>光标移动到最后一行</td></tr><tr><td>:n 或 nG</td><td>n为数字，光标移动到第n行</td></tr><tr><td>gg</td><td>光标移动到第一行，相当于1G</td></tr><tr><td>n<enter></enter></td><td>n为数字，光标向下移动n行</td></tr><tr><td>/word</td><td>向光标之下寻找第一个值为word的字符串。</td></tr><tr><td>?word</td><td>向光标之上寻找第一个值为word的字符串。</td></tr><tr><td>n</td><td>重复前一个查找操作</td></tr><tr><td>N</td><td>反向重复前一个查找操作</td></tr><tr><td>:n1,n2s/word1/word2/g</td><td>n1与n2为数字，在第n1行与n2行之间寻找word1这个字符串，并将该字符串替换为word2</td></tr><tr><td>:1,$s/word1/word2/g</td><td>将全文的word1替换为word2</td></tr><tr><td>:1,$s/word1/word2/gc</td><td>将全文的word1替换为word2，且在替换前要求用户确认。</td></tr><tr><td>v</td><td>选中文本</td></tr><tr><td>d</td><td>剪切选中的文本</td></tr><tr><td>dd</td><td>删除当前行</td></tr><tr><td>y</td><td>复制选中的文本</td></tr><tr><td>yy</td><td>复制当前行</td></tr><tr><td>p</td><td>将复制的数据在光标的下一行/下一个位置粘贴</td></tr><tr><td>u</td><td>撤销</td></tr><tr><td>Ctrl + r</td><td>取消撤销</td></tr><tr><td>大于号 &gt;</td><td>将选中的文本整体向右缩进一次</td></tr><tr><td>小于号 &lt;</td><td>将选中的文本整体向左缩进一次</td></tr><tr><td>:w</td><td>保存</td></tr><tr><td>:w!</td><td>强制保存</td></tr><tr><td>:q</td><td>退出</td></tr><tr><td>:q!</td><td>强制退出</td></tr><tr><td>:wq</td><td>保存并退出</td></tr><tr><td>:set paste</td><td>设置成粘贴模式，取消代码自动缩进</td></tr><tr><td>:set nopaste</td><td>取消粘贴模式，开启代码自动缩进</td></tr><tr><td>:set nu</td><td>显示行号</td></tr><tr><td>:set nonu</td><td>隐藏行号</td></tr><tr><td>gg=G</td><td>将全文代码格式化</td></tr><tr><td>:noh</td><td>关闭查找关键词高亮</td></tr><tr><td>Ctrl + q</td><td>当vim卡死时，可以取消当前正在执行的命令</td></tr></tbody></table><h5 id="异常处理："><a href="#异常处理：" class="headerlink" title="异常处理："></a>异常处理：</h5><ul><li>每次用vim编辑文件时，会自动创建一个.filename.swp的临时文件。</li><li>如果打开某个文件时，该文件的swp文件已存在，则会报错。此时解决办法有两种：<br>  (1) 找到正在打开该文件的程序，并退出<br>  (2) 直接删掉该swp文件即可</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>tmux配置文件</title>
       <link href="/2022/01/17/tmux-pei-zhi-wen-jian/"/>
       <url>/2022/01/17/tmux-pei-zhi-wen-jian/</url>
@@ -102,31 +202,6 @@
             <tag> linux </tag>
             
             <tag> 配置文件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Vim常用命令</title>
-      <link href="/2022/01/17/vim/"/>
-      <url>/2022/01/17/vim/</url>
-      
-        <content type="html"><![CDATA[<h4 id="Vim常用命令"><a href="#Vim常用命令" class="headerlink" title="Vim常用命令"></a>Vim常用命令</h4><h5 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h5><ol><li>命令行模式下的文本编辑器。</li><li>根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。</li><li>使用方式：vim filename<br>如果已有该文件，则打开它。<br>如果没有该文件，则打开个一个新的文件，并命名为filename<h5 id="模式："><a href="#模式：" class="headerlink" title="模式："></a>模式：</h5><h6 id="一般命令模式"><a href="#一般命令模式" class="headerlink" title="一般命令模式"></a>一般命令模式</h6>默认模式。命令输入方式：类似于打游戏放技能，按不同字符，即可进行不同操作。可以复制、粘贴、删除文本等。<h6 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h6></li><li>在一般命令模式里按下i，会进入编辑模式。</li><li>按下ESC会退出编辑模式，返回到一般命令模式。<h6 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h6>在一般命令模式里按下:/?三个字母中的任意一个，会进入命令行模式。命令行在最下面。<br>可以查找、替换、保存、退出、配置编辑器等。</li></ol><h5 id="操作："><a href="#操作：" class="headerlink" title="操作："></a>操作：</h5><table><thead><tr><th>vim指令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>进入编辑模式</td></tr><tr><td>ESC</td><td>进入一般命令模式</td></tr><tr><td>h 或 左箭头键</td><td>光标向左移动一个字符</td></tr><tr><td>j 或 向下箭头</td><td>光标向下移动一个字符</td></tr><tr><td>k 或 向上箭头</td><td>光标向上移动一个字符</td></tr><tr><td>l 或 向右箭头</td><td>光标向右移动一个字符</td></tr><tr><td>n<space></space></td><td>n表示数字，按下数字后再按空格，光标会向右移动这一行的n个字符</td></tr><tr><td>0 或 功能键[Home]</td><td>光标移动到本行开头</td></tr><tr><td>$ 或 功能键[End]</td><td>光标移动到本行末尾</td></tr><tr><td>G</td><td>光标移动到最后一行</td></tr><tr><td>:n 或 nG</td><td>n为数字，光标移动到第n行</td></tr><tr><td>gg</td><td>光标移动到第一行，相当于1G</td></tr><tr><td>n<enter></enter></td><td>n为数字，光标向下移动n行</td></tr><tr><td>/word</td><td>向光标之下寻找第一个值为word的字符串。</td></tr><tr><td>?word</td><td>向光标之上寻找第一个值为word的字符串。</td></tr><tr><td>n</td><td>重复前一个查找操作</td></tr><tr><td>N</td><td>反向重复前一个查找操作</td></tr><tr><td>:n1,n2s/word1/word2/g</td><td>n1与n2为数字，在第n1行与n2行之间寻找word1这个字符串，并将该字符串替换为word2</td></tr><tr><td>:1,$s/word1/word2/g</td><td>将全文的word1替换为word2</td></tr><tr><td>:1,$s/word1/word2/gc</td><td>将全文的word1替换为word2，且在替换前要求用户确认。</td></tr><tr><td>v</td><td>选中文本</td></tr><tr><td>d</td><td>剪切选中的文本</td></tr><tr><td>dd</td><td>删除当前行</td></tr><tr><td>y</td><td>复制选中的文本</td></tr><tr><td>yy</td><td>复制当前行</td></tr><tr><td>p</td><td>将复制的数据在光标的下一行/下一个位置粘贴</td></tr><tr><td>u</td><td>撤销</td></tr><tr><td>Ctrl + r</td><td>取消撤销</td></tr><tr><td>大于号 &gt;</td><td>将选中的文本整体向右缩进一次</td></tr><tr><td>小于号 &lt;</td><td>将选中的文本整体向左缩进一次</td></tr><tr><td>:w</td><td>保存</td></tr><tr><td>:w!</td><td>强制保存</td></tr><tr><td>:q</td><td>退出</td></tr><tr><td>:q!</td><td>强制退出</td></tr><tr><td>:wq</td><td>保存并退出</td></tr><tr><td>:set paste</td><td>设置成粘贴模式，取消代码自动缩进</td></tr><tr><td>:set nopaste</td><td>取消粘贴模式，开启代码自动缩进</td></tr><tr><td>:set nu</td><td>显示行号</td></tr><tr><td>:set nonu</td><td>隐藏行号</td></tr><tr><td>gg=G</td><td>将全文代码格式化</td></tr><tr><td>:noh</td><td>关闭查找关键词高亮</td></tr><tr><td>Ctrl + q</td><td>当vim卡死时，可以取消当前正在执行的命令</td></tr></tbody></table><h5 id="异常处理："><a href="#异常处理：" class="headerlink" title="异常处理："></a>异常处理：</h5><ul><li>每次用vim编辑文件时，会自动创建一个.filename.swp的临时文件。</li><li>如果打开某个文件时，该文件的swp文件已存在，则会报错。此时解决办法有两种：<br>  (1) 找到正在打开该文件的程序，并退出<br>  (2) 直接删掉该swp文件即可</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> linux </tag>
             
         </tags>
       

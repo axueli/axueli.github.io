@@ -6,7 +6,7 @@
   <link href="https://axueli.github.io/atom.xml" rel="self"/>
   
   <link href="https://axueli.github.io/"/>
-  <updated>2022-01-22T06:48:45.962Z</updated>
+  <updated>2022-01-22T11:56:33.305Z</updated>
   <id>https://axueli.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git基础教程</title>
+    <link href="https://axueli.github.io/2022/01/22/git/"/>
+    <id>https://axueli.github.io/2022/01/22/git/</id>
+    <published>2022-01-22T09:38:26.000Z</published>
+    <updated>2022-01-22T11:56:33.305Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;Git教程&quot;&gt;&lt;a href=&quot;#Git教程&quot; class=&quot;headerlink&quot; title=&quot;Git教程&quot;&gt;&lt;/a&gt;Git教程&lt;/h4&gt;&lt;h5 id=&quot;git基本概念&quot;&gt;&lt;a href=&quot;#git基本概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>管道 及 其他</title>
+    <link href="https://axueli.github.io/2022/01/21/thrift/"/>
+    <id>https://axueli.github.io/2022/01/21/thrift/</id>
+    <published>2022-01-21T09:38:26.000Z</published>
+    <updated>2022-01-22T11:54:49.323Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;管道-及-其他&quot;&gt;&lt;a href=&quot;#管道-及-其他&quot; class=&quot;headerlink&quot; title=&quot;管道 及 其他&quot;&gt;&lt;/a&gt;管道 及 其他&lt;/h4&gt;&lt;h5 id=&quot;概念&quot;&gt;&lt;a href=&quot;#概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker基础教程</title>
@@ -29,6 +79,31 @@
         
         
     <summary type="html">&lt;h4 id=&quot;Docker基础教程&quot;&gt;&lt;a href=&quot;#Docker基础教程&quot; class=&quot;headerlink&quot; title=&quot;Docker基础教程&quot;&gt;&lt;/a&gt;Docker基础教程&lt;/h4&gt;&lt;h5 id=&quot;安装教程&quot;&gt;&lt;a href=&quot;#安装教程&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh教程</title>
+    <link href="https://axueli.github.io/2022/01/19/ssh/"/>
+    <id>https://axueli.github.io/2022/01/19/ssh/</id>
+    <published>2022-01-19T09:38:26.000Z</published>
+    <updated>2022-01-22T11:58:36.077Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;ssh教程&quot;&gt;&lt;a href=&quot;#ssh教程&quot; class=&quot;headerlink&quot; title=&quot;ssh教程&quot;&gt;&lt;/a&gt;ssh教程&lt;/h4&gt;&lt;h5 id=&quot;ssh登录&quot;&gt;&lt;a href=&quot;#ssh登录&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -73,7 +148,7 @@
     <link href="https://axueli.github.io/2022/01/17/tmux/"/>
     <id>https://axueli.github.io/2022/01/17/tmux/</id>
     <published>2022-01-17T09:38:26.000Z</published>
-    <updated>2022-01-22T06:49:23.249Z</updated>
+    <updated>2022-01-22T11:59:46.398Z</updated>
     
     
       
@@ -81,6 +156,31 @@
         
         
     <summary type="html">&lt;h4 id=&quot;tmux常用命令&quot;&gt;&lt;a href=&quot;#tmux常用命令&quot; class=&quot;headerlink&quot; title=&quot;tmux常用命令&quot;&gt;&lt;/a&gt;tmux常用命令&lt;/h4&gt;&lt;h5 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vim常用命令</title>
+    <link href="https://axueli.github.io/2022/01/17/vim/"/>
+    <id>https://axueli.github.io/2022/01/17/vim/</id>
+    <published>2022-01-17T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:41.440Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;Vim常用命令&quot;&gt;&lt;a href=&quot;#Vim常用命令&quot; class=&quot;headerlink&quot; title=&quot;Vim常用命令&quot;&gt;&lt;/a&gt;Vim常用命令&lt;/h4&gt;&lt;h5 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -126,31 +226,6 @@ setw -g</summary>
   </entry>
   
   <entry>
-    <title>Vim常用命令</title>
-    <link href="https://axueli.github.io/2022/01/17/vim/"/>
-    <id>https://axueli.github.io/2022/01/17/vim/</id>
-    <published>2022-01-17T09:38:26.000Z</published>
-    <updated>2022-01-22T06:49:41.440Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;Vim常用命令&quot;&gt;&lt;a href=&quot;#Vim常用命令&quot; class=&quot;headerlink&quot; title=&quot;Vim常用命令&quot;&gt;&lt;/a&gt;Vim常用命令&lt;/h4&gt;&lt;h5 id=&quot;功能：&quot;&gt;&lt;a href=&quot;#功能：&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>vim配置文件</title>
     <link href="https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/"/>
     <id>https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/</id>
@@ -187,7 +262,7 @@ setw -g</summary>
     <link href="https://axueli.github.io/2022/01/16/hexo/"/>
     <id>https://axueli.github.io/2022/01/16/hexo/</id>
     <published>2022-01-16T09:38:26.000Z</published>
-    <updated>2022-01-22T06:48:54.985Z</updated>
+    <updated>2022-01-22T11:56:57.115Z</updated>
     
     
       

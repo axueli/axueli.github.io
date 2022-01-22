@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="books, ACM,LeetCode,AcWing,算法，AtCode，Codeforces，C++,java,linux等">
+    <meta name="keywords" content="linux">
     <meta name="description" content="本网站是个人兴趣爱好，总结分享经验，记录生活点滴的平台，希望在以后的学习旅途中，走出自己的风景。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>books | 啊、雪梨のBlog</title>
+    <title>Git基础教程 | 啊、雪梨のBlog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -260,12 +260,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">books</h1>
+                    <h1 class="description center-align post-title">Git基础教程</h1>
                 </div>
             </div>
         </div>
@@ -379,12 +379,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/linux/">
+                                <span class="chip bg-color">linux</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/linux/" class="post-category">
+                                linux
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -393,28 +406,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-21
+                    2022-01-22
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-21
+                    2022-01-22
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    0
+                    808
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -437,7 +450,169 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h4 id="Git教程"><a href="#Git教程" class="headerlink" title="Git教程"></a>Git教程</h4><h5 id="git基本概念"><a href="#git基本概念" class="headerlink" title="git基本概念"></a>git基本概念</h5><ul>
+<li>工作区：仓库的目录。工作区是独立于各个分支的。</li>
+<li>暂存区：数据暂时存放的区域，类似于工作区写入版本库前的缓存区。暂存区是独立于各个分支的。</li>
+<li>版本库：存放所有已经提交到本地仓库的代码版本</li>
+<li>版本结构：树结构，树中每个节点代表一个代码版本。<h5 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h5><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>git config –global user.name xxx</td>
+<td>设置全局用户名，信息记录在~/.gitconfig文件中</td>
+</tr>
+<tr>
+<td>git config –global user.email <a href="mailto:xxx@xxx.com">xxx@xxx.com</a></td>
+<td>设置全局邮箱地址，信息记录在~/.gitconfig文件中</td>
+</tr>
+<tr>
+<td>git init</td>
+<td>将当前目录配置成git仓库，信息记录在隐藏的.git文件夹中</td>
+</tr>
+<tr>
+<td>git add XX</td>
+<td>将XX文件添加到暂存区</td>
+</tr>
+<tr>
+<td>git add .</td>
+<td>将所有待加入暂存区的文件加入暂存区</td>
+</tr>
+<tr>
+<td>git rm –cached XX</td>
+<td>将文件从仓库索引目录中删掉</td>
+</tr>
+<tr>
+<td>git commit -m</td>
+<td>“给自己看的备注信息”：将暂存区的内容提交到当前分支</td>
+</tr>
+<tr>
+<td>git status</td>
+<td>查看仓库状态</td>
+</tr>
+<tr>
+<td>git diff XX</td>
+<td>查看XX文件相对于暂存区修改了哪些内容</td>
+</tr>
+<tr>
+<td>git log</td>
+<td>查看当前分支的所有版本</td>
+</tr>
+<tr>
+<td>git reflog</td>
+<td>查看HEAD指针的移动历史（包括被回滚的版本）</td>
+</tr>
+<tr>
+<td>git reset –hard HEAD^ 或 git reset –hard HEAD~</td>
+<td>将代码库回滚到上一个版本</td>
+</tr>
+<tr>
+<td>git reset –hard HEAD^^</td>
+<td>往上回滚两次，以此类推</td>
+</tr>
+<tr>
+<td>git reset –hard HEAD~100</td>
+<td>往上回滚100个版本</td>
+</tr>
+<tr>
+<td>git reset –hard 版本号</td>
+<td>回滚到某一特定版本</td>
+</tr>
+<tr>
+<td>git checkout — XX或git restore XX</td>
+<td>将XX文件尚未加入暂存区的修改全部撤销</td>
+</tr>
+<tr>
+<td>git remote add origin <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git</td>
+<td>将本地仓库关联到远程仓库</td>
+</tr>
+<tr>
+<td>git push -u (第一次需要-u以后不需要)</td>
+<td>将当前分支推送到远程仓库</td>
+</tr>
+<tr>
+<td>git push origin branch_name</td>
+<td>将本地的某个分支推送到远程仓库</td>
+</tr>
+<tr>
+<td>git clone <a href="mailto:git@git.acwing.com">git@git.acwing.com</a>:xxx/XXX.git</td>
+<td>将远程仓库XXX下载到当前目录下</td>
+</tr>
+<tr>
+<td>git checkout -b branch_name</td>
+<td>创建并切换到branch_name这个分支</td>
+</tr>
+<tr>
+<td>git branch</td>
+<td>查看所有分支和当前所处分支</td>
+</tr>
+<tr>
+<td>git checkout branch_name</td>
+<td>切换到branch_name这个分支</td>
+</tr>
+<tr>
+<td>git merge branch_name</td>
+<td>将分支branch_name合并到当前分支上</td>
+</tr>
+<tr>
+<td>git branch -d branch_name</td>
+<td>删除本地仓库的branch_name分支</td>
+</tr>
+<tr>
+<td>git branch branch_name</td>
+<td>创建新分支</td>
+</tr>
+<tr>
+<td>git push –set-upstream origin branch_name</td>
+<td>设置本地的branch_name分支对应远程仓库的branch_name分支</td>
+</tr>
+<tr>
+<td>git push -d origin branch_name</td>
+<td>删除远程仓库的branch_name分支</td>
+</tr>
+<tr>
+<td>git pull</td>
+<td>将远程仓库的当前分支与本地仓库的当前分支合并</td>
+</tr>
+<tr>
+<td>git pull origin branch_name</td>
+<td>将远程仓库的branch_name分支与本地仓库的当前分支合并</td>
+</tr>
+<tr>
+<td>git branch –set-upstream-to=origin/branch_name1 branch_name2</td>
+<td>将远程的branch_name1分支与本地的branch_name2分支对应</td>
+</tr>
+<tr>
+<td>git checkout -t origin/branch_name</td>
+<td>将远程的branch_name分支拉取到本地</td>
+</tr>
+<tr>
+<td>git stash</td>
+<td>将工作区和暂存区中尚未提交的修改存入栈中</td>
+</tr>
+<tr>
+<td>git stash apply</td>
+<td>将栈顶存储的修改恢复到当前分支，但不删除栈顶元素</td>
+</tr>
+<tr>
+<td>git stash drop</td>
+<td>删除栈顶存储的修改</td>
+</tr>
+<tr>
+<td>git stash pop</td>
+<td>将栈顶存储的修改恢复到当前分支，同时删除栈顶元素</td>
+</tr>
+<tr>
+<td>git stash list</td>
+<td>查看栈中所有元素</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -453,7 +628,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">啊、雪梨</a>
+                    <a href="/about" rel="external nofollow noreferrer">axueli</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -463,7 +638,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://axueli.github.io/books/index.html">https://axueli.github.io/books/index.html</a>
+                    <a href="https://axueli.github.io/2022/01/22/git/">https://axueli.github.io/2022/01/22/git/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -476,7 +651,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">啊、雪梨</a>
+                    <a href="/about" target="_blank">axueli</a>
                     !
                 </span>
             </div>
@@ -500,7 +675,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/linux/">
+                                    <span class="chip bg-color">linux</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -673,34 +852,46 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2022/01/22/git/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="books">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Git基础教程">
                         
-                        <span class="card-title">books</span>
+                        <span class="card-title">Git基础教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            Git是一个开源的分布式版本控制系统
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-22
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            啊、雪梨
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -708,22 +899,22 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/books/index.html">
+                <a href="/2022/01/21/thrift/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="books">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="管道 及 其他">
                         
-                        <span class="card-title">books</span>
+                        <span class="card-title">管道 及 其他</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            管道类似于文件重定向，可以将前一个命令的stdout重定向到下一个命令的stdin。
                         
                     </div>
                     <div class="publish-info">
@@ -732,13 +923,24 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            啊、雪梨
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/linux/">
+                        <span class="chip bg-color">linux</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -903,6 +1105,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
