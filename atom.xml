@@ -6,7 +6,7 @@
   <link href="https://axueli.github.io/atom.xml" rel="self"/>
   
   <link href="https://axueli.github.io/"/>
-  <updated>2022-01-22T03:51:41.783Z</updated>
+  <updated>2022-01-22T06:48:45.962Z</updated>
   <id>https://axueli.github.io/</id>
   
   <author>
@@ -17,61 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hexo 博客教程</title>
-    <link href="https://axueli.github.io/2022/01/22/hexo/"/>
-    <id>https://axueli.github.io/2022/01/22/hexo/</id>
-    <published>2022-01-22T09:38:26.000Z</published>
-    <updated>2022-01-22T03:51:41.783Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;Hexo-博客教程&quot;&gt;&lt;a href=&quot;#Hexo-博客教程&quot; class=&quot;headerlink&quot; title=&quot;Hexo 博客教程&quot;&gt;&lt;/a&gt;Hexo 博客教程&lt;/h4&gt;&lt;p&gt;安装需要环境和工具Node.js 和 Git 和Hexo 创建</summary>
-        
-      
-    
-    
-    
-    <category term="hexo" scheme="https://axueli.github.io/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="https://axueli.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux常用文件管理命令</title>
-    <link href="https://axueli.github.io/2022/01/22/linux/"/>
-    <id>https://axueli.github.io/2022/01/22/linux/</id>
-    <published>2022-01-22T09:38:26.000Z</published>
-    <updated>2022-01-21T14:29:04.472Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;Linux常用文件管理命令&quot;&gt;&lt;a href=&quot;#Linux常用文件管理命令&quot; class=&quot;headerlink&quot; title=&quot;Linux常用文件管理命令&quot;&gt;&lt;/a&gt;Linux常用文件管理命令&lt;/h4&gt;&lt;h5 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Docker基础教程</title>
     <link href="https://axueli.github.io/2022/01/20/docker/"/>
     <id>https://axueli.github.io/2022/01/20/docker/</id>
     <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:28:44.215Z</updated>
+    <updated>2022-01-22T06:48:45.962Z</updated>
     
     
       
@@ -93,10 +43,10 @@
   
   <entry>
     <title>shell常用命令</title>
-    <link href="https://axueli.github.io/2022/01/20/shell/"/>
-    <id>https://axueli.github.io/2022/01/20/shell/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-22T03:44:30.072Z</updated>
+    <link href="https://axueli.github.io/2022/01/18/shell/"/>
+    <id>https://axueli.github.io/2022/01/18/shell/</id>
+    <published>2022-01-18T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:13.549Z</updated>
     
     
       
@@ -120,10 +70,10 @@
   
   <entry>
     <title>tmux常用命令</title>
-    <link href="https://axueli.github.io/2022/01/20/tmux/"/>
-    <id>https://axueli.github.io/2022/01/20/tmux/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:29:32.432Z</updated>
+    <link href="https://axueli.github.io/2022/01/17/tmux/"/>
+    <id>https://axueli.github.io/2022/01/17/tmux/</id>
+    <published>2022-01-17T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:23.249Z</updated>
     
     
       
@@ -145,10 +95,10 @@
   
   <entry>
     <title>tmux配置文件</title>
-    <link href="https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/"/>
-    <id>https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-22T03:47:49.615Z</updated>
+    <link href="https://axueli.github.io/2022/01/17/tmux-pei-zhi-wen-jian/"/>
+    <id>https://axueli.github.io/2022/01/17/tmux-pei-zhi-wen-jian/</id>
+    <published>2022-01-17T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:32.895Z</updated>
     
     
       
@@ -177,10 +127,10 @@ setw -g</summary>
   
   <entry>
     <title>Vim常用命令</title>
-    <link href="https://axueli.github.io/2022/01/20/vim/"/>
-    <id>https://axueli.github.io/2022/01/20/vim/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:29:46.132Z</updated>
+    <link href="https://axueli.github.io/2022/01/17/vim/"/>
+    <id>https://axueli.github.io/2022/01/17/vim/</id>
+    <published>2022-01-17T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:41.440Z</updated>
     
     
       
@@ -202,10 +152,10 @@ setw -g</summary>
   
   <entry>
     <title>vim配置文件</title>
-    <link href="https://axueli.github.io/2022/01/20/vim-pei-zhi-wen-jian/"/>
-    <id>https://axueli.github.io/2022/01/20/vim-pei-zhi-wen-jian/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-22T03:48:38.674Z</updated>
+    <link href="https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/"/>
+    <id>https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/</id>
+    <published>2022-01-17T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:50.075Z</updated>
     
     
       
@@ -229,6 +179,56 @@ setw -g</summary>
     <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
     
     <category term="配置文件" scheme="https://axueli.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 博客教程</title>
+    <link href="https://axueli.github.io/2022/01/16/hexo/"/>
+    <id>https://axueli.github.io/2022/01/16/hexo/</id>
+    <published>2022-01-16T09:38:26.000Z</published>
+    <updated>2022-01-22T06:48:54.985Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;Hexo-博客教程&quot;&gt;&lt;a href=&quot;#Hexo-博客教程&quot; class=&quot;headerlink&quot; title=&quot;Hexo 博客教程&quot;&gt;&lt;/a&gt;Hexo 博客教程&lt;/h4&gt;&lt;p&gt;安装需要环境和工具Node.js 和 Git 和Hexo 创建</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://axueli.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://axueli.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用文件管理命令</title>
+    <link href="https://axueli.github.io/2022/01/16/linux/"/>
+    <id>https://axueli.github.io/2022/01/16/linux/</id>
+    <published>2022-01-16T09:38:26.000Z</published>
+    <updated>2022-01-22T06:49:04.570Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;Linux常用文件管理命令&quot;&gt;&lt;a href=&quot;#Linux常用文件管理命令&quot; class=&quot;headerlink&quot; title=&quot;Linux常用文件管理命令&quot;&gt;&lt;/a&gt;Linux常用文件管理命令&lt;/h4&gt;&lt;h5 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
     
   </entry>
   
