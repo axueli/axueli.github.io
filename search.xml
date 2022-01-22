@@ -156,31 +156,6 @@
     
     
     <entry>
-      <title>Vim常用命令</title>
-      <link href="/2022/01/17/vim/"/>
-      <url>/2022/01/17/vim/</url>
-      
-        <content type="html"><![CDATA[<h4 id="Vim常用命令"><a href="#Vim常用命令" class="headerlink" title="Vim常用命令"></a>Vim常用命令</h4><h5 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h5><ol><li>命令行模式下的文本编辑器。</li><li>根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。</li><li>使用方式：vim filename<br>如果已有该文件，则打开它。<br>如果没有该文件，则打开个一个新的文件，并命名为filename<h5 id="模式："><a href="#模式：" class="headerlink" title="模式："></a>模式：</h5><h6 id="一般命令模式"><a href="#一般命令模式" class="headerlink" title="一般命令模式"></a>一般命令模式</h6>默认模式。命令输入方式：类似于打游戏放技能，按不同字符，即可进行不同操作。可以复制、粘贴、删除文本等。<h6 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h6></li><li>在一般命令模式里按下i，会进入编辑模式。</li><li>按下ESC会退出编辑模式，返回到一般命令模式。<h6 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h6>在一般命令模式里按下:/?三个字母中的任意一个，会进入命令行模式。命令行在最下面。<br>可以查找、替换、保存、退出、配置编辑器等。</li></ol><h5 id="操作："><a href="#操作：" class="headerlink" title="操作："></a>操作：</h5><table><thead><tr><th>vim指令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>进入编辑模式</td></tr><tr><td>ESC</td><td>进入一般命令模式</td></tr><tr><td>h 或 左箭头键</td><td>光标向左移动一个字符</td></tr><tr><td>j 或 向下箭头</td><td>光标向下移动一个字符</td></tr><tr><td>k 或 向上箭头</td><td>光标向上移动一个字符</td></tr><tr><td>l 或 向右箭头</td><td>光标向右移动一个字符</td></tr><tr><td>n<space></space></td><td>n表示数字，按下数字后再按空格，光标会向右移动这一行的n个字符</td></tr><tr><td>0 或 功能键[Home]</td><td>光标移动到本行开头</td></tr><tr><td>$ 或 功能键[End]</td><td>光标移动到本行末尾</td></tr><tr><td>G</td><td>光标移动到最后一行</td></tr><tr><td>:n 或 nG</td><td>n为数字，光标移动到第n行</td></tr><tr><td>gg</td><td>光标移动到第一行，相当于1G</td></tr><tr><td>n<enter></enter></td><td>n为数字，光标向下移动n行</td></tr><tr><td>/word</td><td>向光标之下寻找第一个值为word的字符串。</td></tr><tr><td>?word</td><td>向光标之上寻找第一个值为word的字符串。</td></tr><tr><td>n</td><td>重复前一个查找操作</td></tr><tr><td>N</td><td>反向重复前一个查找操作</td></tr><tr><td>:n1,n2s/word1/word2/g</td><td>n1与n2为数字，在第n1行与n2行之间寻找word1这个字符串，并将该字符串替换为word2</td></tr><tr><td>:1,$s/word1/word2/g</td><td>将全文的word1替换为word2</td></tr><tr><td>:1,$s/word1/word2/gc</td><td>将全文的word1替换为word2，且在替换前要求用户确认。</td></tr><tr><td>v</td><td>选中文本</td></tr><tr><td>d</td><td>剪切选中的文本</td></tr><tr><td>dd</td><td>删除当前行</td></tr><tr><td>y</td><td>复制选中的文本</td></tr><tr><td>yy</td><td>复制当前行</td></tr><tr><td>p</td><td>将复制的数据在光标的下一行/下一个位置粘贴</td></tr><tr><td>u</td><td>撤销</td></tr><tr><td>Ctrl + r</td><td>取消撤销</td></tr><tr><td>大于号 &gt;</td><td>将选中的文本整体向右缩进一次</td></tr><tr><td>小于号 &lt;</td><td>将选中的文本整体向左缩进一次</td></tr><tr><td>:w</td><td>保存</td></tr><tr><td>:w!</td><td>强制保存</td></tr><tr><td>:q</td><td>退出</td></tr><tr><td>:q!</td><td>强制退出</td></tr><tr><td>:wq</td><td>保存并退出</td></tr><tr><td>:set paste</td><td>设置成粘贴模式，取消代码自动缩进</td></tr><tr><td>:set nopaste</td><td>取消粘贴模式，开启代码自动缩进</td></tr><tr><td>:set nu</td><td>显示行号</td></tr><tr><td>:set nonu</td><td>隐藏行号</td></tr><tr><td>gg=G</td><td>将全文代码格式化</td></tr><tr><td>:noh</td><td>关闭查找关键词高亮</td></tr><tr><td>Ctrl + q</td><td>当vim卡死时，可以取消当前正在执行的命令</td></tr></tbody></table><h5 id="异常处理："><a href="#异常处理：" class="headerlink" title="异常处理："></a>异常处理：</h5><ul><li>每次用vim编辑文件时，会自动创建一个.filename.swp的临时文件。</li><li>如果打开某个文件时，该文件的swp文件已存在，则会报错。此时解决办法有两种：<br>  (1) 找到正在打开该文件的程序，并退出<br>  (2) 直接删掉该swp文件即可</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>tmux配置文件</title>
       <link href="/2022/01/17/tmux-pei-zhi-wen-jian/"/>
       <url>/2022/01/17/tmux-pei-zhi-wen-jian/</url>
@@ -202,6 +177,31 @@
             <tag> linux </tag>
             
             <tag> 配置文件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vim常用命令</title>
+      <link href="/2022/01/17/vim/"/>
+      <url>/2022/01/17/vim/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Vim常用命令"><a href="#Vim常用命令" class="headerlink" title="Vim常用命令"></a>Vim常用命令</h4><h5 id="功能："><a href="#功能：" class="headerlink" title="功能："></a>功能：</h5><ol><li>命令行模式下的文本编辑器。</li><li>根据文件扩展名自动判别编程语言。支持代码缩进、代码高亮等功能。</li><li>使用方式：vim filename<br>如果已有该文件，则打开它。<br>如果没有该文件，则打开个一个新的文件，并命名为filename<h5 id="模式："><a href="#模式：" class="headerlink" title="模式："></a>模式：</h5><h6 id="一般命令模式"><a href="#一般命令模式" class="headerlink" title="一般命令模式"></a>一般命令模式</h6>默认模式。命令输入方式：类似于打游戏放技能，按不同字符，即可进行不同操作。可以复制、粘贴、删除文本等。<h6 id="编辑模式"><a href="#编辑模式" class="headerlink" title="编辑模式"></a>编辑模式</h6></li><li>在一般命令模式里按下i，会进入编辑模式。</li><li>按下ESC会退出编辑模式，返回到一般命令模式。<h6 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h6>在一般命令模式里按下:/?三个字母中的任意一个，会进入命令行模式。命令行在最下面。<br>可以查找、替换、保存、退出、配置编辑器等。</li></ol><h5 id="操作："><a href="#操作：" class="headerlink" title="操作："></a>操作：</h5><table><thead><tr><th>vim指令</th><th>作用</th></tr></thead><tbody><tr><td>i</td><td>进入编辑模式</td></tr><tr><td>ESC</td><td>进入一般命令模式</td></tr><tr><td>h 或 左箭头键</td><td>光标向左移动一个字符</td></tr><tr><td>j 或 向下箭头</td><td>光标向下移动一个字符</td></tr><tr><td>k 或 向上箭头</td><td>光标向上移动一个字符</td></tr><tr><td>l 或 向右箭头</td><td>光标向右移动一个字符</td></tr><tr><td>n<space></space></td><td>n表示数字，按下数字后再按空格，光标会向右移动这一行的n个字符</td></tr><tr><td>0 或 功能键[Home]</td><td>光标移动到本行开头</td></tr><tr><td>$ 或 功能键[End]</td><td>光标移动到本行末尾</td></tr><tr><td>G</td><td>光标移动到最后一行</td></tr><tr><td>:n 或 nG</td><td>n为数字，光标移动到第n行</td></tr><tr><td>gg</td><td>光标移动到第一行，相当于1G</td></tr><tr><td>n<enter></enter></td><td>n为数字，光标向下移动n行</td></tr><tr><td>/word</td><td>向光标之下寻找第一个值为word的字符串。</td></tr><tr><td>?word</td><td>向光标之上寻找第一个值为word的字符串。</td></tr><tr><td>n</td><td>重复前一个查找操作</td></tr><tr><td>N</td><td>反向重复前一个查找操作</td></tr><tr><td>:n1,n2s/word1/word2/g</td><td>n1与n2为数字，在第n1行与n2行之间寻找word1这个字符串，并将该字符串替换为word2</td></tr><tr><td>:1,$s/word1/word2/g</td><td>将全文的word1替换为word2</td></tr><tr><td>:1,$s/word1/word2/gc</td><td>将全文的word1替换为word2，且在替换前要求用户确认。</td></tr><tr><td>v</td><td>选中文本</td></tr><tr><td>d</td><td>剪切选中的文本</td></tr><tr><td>dd</td><td>删除当前行</td></tr><tr><td>y</td><td>复制选中的文本</td></tr><tr><td>yy</td><td>复制当前行</td></tr><tr><td>p</td><td>将复制的数据在光标的下一行/下一个位置粘贴</td></tr><tr><td>u</td><td>撤销</td></tr><tr><td>Ctrl + r</td><td>取消撤销</td></tr><tr><td>大于号 &gt;</td><td>将选中的文本整体向右缩进一次</td></tr><tr><td>小于号 &lt;</td><td>将选中的文本整体向左缩进一次</td></tr><tr><td>:w</td><td>保存</td></tr><tr><td>:w!</td><td>强制保存</td></tr><tr><td>:q</td><td>退出</td></tr><tr><td>:q!</td><td>强制退出</td></tr><tr><td>:wq</td><td>保存并退出</td></tr><tr><td>:set paste</td><td>设置成粘贴模式，取消代码自动缩进</td></tr><tr><td>:set nopaste</td><td>取消粘贴模式，开启代码自动缩进</td></tr><tr><td>:set nu</td><td>显示行号</td></tr><tr><td>:set nonu</td><td>隐藏行号</td></tr><tr><td>gg=G</td><td>将全文代码格式化</td></tr><tr><td>:noh</td><td>关闭查找关键词高亮</td></tr><tr><td>Ctrl + q</td><td>当vim卡死时，可以取消当前正在执行的命令</td></tr></tbody></table><h5 id="异常处理："><a href="#异常处理：" class="headerlink" title="异常处理："></a>异常处理：</h5><ul><li>每次用vim编辑文件时，会自动创建一个.filename.swp的临时文件。</li><li>如果打开某个文件时，该文件的swp文件已存在，则会报错。此时解决办法有两种：<br>  (1) 找到正在打开该文件的程序，并退出<br>  (2) 直接删掉该swp文件即可</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
             
         </tags>
       
@@ -239,31 +239,6 @@
     
     
     <entry>
-      <title>Hexo 博客教程</title>
-      <link href="/2022/01/16/hexo/"/>
-      <url>/2022/01/16/hexo/</url>
-      
-        <content type="html"><![CDATA[<h4 id="Hexo-博客教程"><a href="#Hexo-博客教程" class="headerlink" title="Hexo 博客教程"></a>Hexo 博客教程</h4><p>安装需要环境和工具Node.js 和 Git 和Hexo 创建 Github等其他服务器</p><p>在Github中新建项目  项目名 为 Github 账号名.github.io  ,其他选项基本默认即可，<br>例如: </p><pre class="line-numbers language-none"><code class="language-none">axueli.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在文件夹中右键 Git base 输入 ssh 确定是否安装ssh</p><p>输入命令行</p><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t -rsa -C "邮箱地址" 邮箱地址为Github注册邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>后面点击四次回车<br>在C:\用户\Administrator.ssh 中找到 id_rsa.pub 文件<br>Ctrl + a 全选 复制 电脑公钥 到 Github中的ssh密钥<br>在Git Base中输入命令行</p><pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com测试ssh是否绑定成功<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在 D 盘中新建 Blog 文件夹 </p><p>在Blog文件夹的根目录中找到 _config.yml 文件 ,进入后下拉到底更改为下面的命令</p><pre class="line-numbers language-none"><code class="language-none">deploy:  type: git  repository: git@github.com:axueli/axueli.github.io.git  branch: main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>右键 Git Base 输入命令行</p><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo #在Blog文件夹中安装hexohexo init#初始化hexo(容易失败，可多试几次,或者换源)出现 INFO  Start blogging with Hexo! 为成功hexo s#静态生成本地的hexo页面出现 is running at http://localhost:4000/ . Press Ctrl+C to stop. 语句<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>右键  copy 选中  <a href="http://localhost:4000/">http://localhost:4000/</a> 到 浏览器 生成默认博客界面，Ctrl + c 会终止运行,此时4000端口的本地静态网页会无法访问</p><p>输入命令行</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --savegit config --global user.email 你的邮箱Github的邮箱git config --global user.name 你的名字Github的账号名hexo d上传文件到Github上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>后面可以通过 <a href="https://github账号名i.github.io/">https://Github账号名i.github.io/</a> 访问你的博客<br>例如</p><pre class="line-numbers language-none"><code class="language-none">https://axueli.github.io/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Linux常用文件管理命令</title>
       <link href="/2022/01/16/linux/"/>
       <url>/2022/01/16/linux/</url>
@@ -281,6 +256,31 @@
         <tags>
             
             <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo 博客教程</title>
+      <link href="/2022/01/16/hexo/"/>
+      <url>/2022/01/16/hexo/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Hexo-博客教程"><a href="#Hexo-博客教程" class="headerlink" title="Hexo 博客教程"></a>Hexo 博客教程</h4><p>安装需要环境和工具Node.js 和 Git 和Hexo 创建 Github等其他服务器</p><p>在Github中新建项目  项目名 为 Github 账号名.github.io  ,其他选项基本默认即可，<br>例如: </p><pre class="line-numbers language-none"><code class="language-none">axueli.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在文件夹中右键 Git base 输入 ssh 确定是否安装ssh</p><p>输入命令行</p><pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t -rsa -C "邮箱地址" 邮箱地址为Github注册邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>后面点击四次回车<br>在C:\用户\Administrator.ssh 中找到 id_rsa.pub 文件<br>Ctrl + a 全选 复制 电脑公钥 到 Github中的ssh密钥<br>在Git Base中输入命令行</p><pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com测试ssh是否绑定成功<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在 D 盘中新建 Blog 文件夹 </p><p>在Blog文件夹的根目录中找到 _config.yml 文件 ,进入后下拉到底更改为下面的命令</p><pre class="line-numbers language-none"><code class="language-none">deploy:  type: git  repository: git@github.com:axueli/axueli.github.io.git  branch: main<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>右键 Git Base 输入命令行</p><pre class="line-numbers language-none"><code class="language-none">npm install -g hexo #在Blog文件夹中安装hexohexo init#初始化hexo(容易失败，可多试几次,或者换源)出现 INFO  Start blogging with Hexo! 为成功hexo s#静态生成本地的hexo页面出现 is running at http://localhost:4000/ . Press Ctrl+C to stop. 语句<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>右键  copy 选中  <a href="http://localhost:4000/">http://localhost:4000/</a> 到 浏览器 生成默认博客界面，Ctrl + c 会终止运行,此时4000端口的本地静态网页会无法访问</p><p>输入命令行</p><pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --savegit config --global user.email 你的邮箱Github的邮箱git config --global user.name 你的名字Github的账号名hexo d上传文件到Github上<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p>后面可以通过 <a href="https://github账号名i.github.io/">https://Github账号名i.github.io/</a> 访问你的博客<br>例如</p><pre class="line-numbers language-none"><code class="language-none">https://axueli.github.io/<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
             
         </tags>
       
