@@ -239,31 +239,6 @@
     
     
     <entry>
-      <title>Linux常用文件管理命令</title>
-      <link href="/2022/01/16/linux/"/>
-      <url>/2022/01/16/linux/</url>
-      
-        <content type="html"><![CDATA[<h4 id="Linux常用文件管理命令"><a href="#Linux常用文件管理命令" class="headerlink" title="Linux常用文件管理命令"></a>Linux常用文件管理命令</h4><h5 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h5><table><thead><tr><th>快捷键</th><th>作用</th></tr></thead><tbody><tr><td>windows/Linux下：(fn看键盘情况) + Ctrl + insert，Mac下：command + c</td><td>复制文本</td></tr><tr><td>windows/Linux下：(fn看键盘情况) + Shift + insert，Mac下：command + v</td><td>粘贴文本</td></tr><tr><td>ctrl + c</td><td>向当前的进程发送终止指令 （在命令输错时,直接换行输入）</td></tr><tr><td>ctrl + u</td><td>清空当前输入的指令</td></tr><tr><td>tab键</td><td>可以补全命令和文件名。如果补全不了，连按两次tab键，可以显示备选选项</td></tr></tbody></table><h5 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h5><p>绝对路径: 从根目录(/)开始的目录路径 (pwd命令输出为绝对路径)</p><pre class="line-numbers language-none"><code class="language-none">例如: /home/user1/abc.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>相对路径: 从当前路径开始的路径 </p><pre class="line-numbers language-none"><code class="language-none">例如: home/user1/abc.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><table><thead><tr><th>指令</th><th>路径</th></tr></thead><tbody><tr><td>./</td><td>表示当前目录,不变(一个点)</td></tr><tr><td>../</td><td>表示上层目录(两个点)</td></tr><tr><td>~/</td><td>表示家目录(进入 /home/acs 目录下,表示为home文件夹下的用户的目录下)</td></tr><tr><td>/</td><td>表示根目录(进入 / 目录下,最顶层的目录)</td></tr></tbody></table><ul><li><p>如果是用.开头的文件，会默认设为隐藏文件</p><h5 id="ls-查看指令"><a href="#ls-查看指令" class="headerlink" title="ls 查看指令"></a>ls 查看指令</h5><table><thead><tr><th>ls指令</th><th></th></tr></thead><tbody><tr><td>ls</td><td>展示当前目录下的文件和文件夹(不包含隐藏类)</td></tr><tr><td>ls -a</td><td>展示当前目录下的文件和文件夹(包含隐藏类)</td></tr><tr><td>ls -l</td><td>展示当前目录下的文件和文件夹的详细信息(不包含隐藏类)</td></tr><tr><td>ls -hl</td><td>人性化 展示当前目录下的文件和文件夹的详细信息(不包含隐藏类)(ls 类指令+h均为人性化)</td></tr><tr><td>ls -A</td><td>不显示当前目录和上层目录</td></tr><tr><td>ls 文件夹名</td><td>可以在不进入该文件夹的情况下查看文件夹内的文件名</td></tr><tr><td>chmod +r ubuntu_20_04.tar</td><td>增加文件可读权限</td></tr></tbody></table></li><li><p>ll == ls -la == ls -al </p></li></ul><pre class="line-numbers language-none"><code class="language-none">例如:ls homework展示当前目录下的homework下的文件和文件夹(不包含隐藏类)例如:ls homework -l 展示当前目录下的homework下的文件和文件夹的详细信息(含隐藏类)例如:ls a.txt -l展示当前目录下的a.txt下的文件和文件夹的详细信息(含隐藏类)例如:ls homework -hl 例如:ls a.txt -hl<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h5><table><thead><tr><th>基础指令</th><th></th></tr></thead><tbody><tr><td>pwd</td><td>显示当前绝对路径</td></tr><tr><td>cd</td><td>返回家目录</td></tr><tr><td>cd ~</td><td>返回家目录</td></tr><tr><td>cd XXX</td><td>进入XXX目录下</td></tr><tr><td>cd /</td><td>返回根目录</td></tr><tr><td>cd ..</td><td>返回上层目录</td></tr><tr><td>cd -</td><td>回退到上一个目录(和cd ..表示不一样,表示刚才所处的目录)</td></tr><tr><td>cat XXX</td><td>展示文件XXX中的内容 / 查看文件中的内容</td></tr><tr><td>find XXX</td><td>查询文件夹结构</td></tr><tr><td>history</td><td>显示历史指令</td></tr></tbody></table><h5 id="cp-复制粘贴重命名"><a href="#cp-复制粘贴重命名" class="headerlink" title="cp 复制粘贴重命名"></a>cp 复制粘贴重命名</h5><ul><li>cp XXX YYY<br>将XXX文件复制成YYY，XXX和YYY可以是一个路径<pre class="line-numbers language-none"><code class="language-none">例如:cp a/tmp.txt b将tmp.txt文件从文件夹a复制到b中例如:cp a/tmp.txt b/tmp2.txt将tmp.txt文件从文件夹a复制到b中并重命名为tmp2.txt例如:cp a b -r将文件夹a复制到b中,如果文件b没有,就将文件夹a重命名b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h5 id="mv-剪切粘贴重命名"><a href="#mv-剪切粘贴重命名" class="headerlink" title="mv 剪切粘贴重命名"></a>mv 剪切粘贴重命名</h5></li><li>mv XXX YYY<br>将XXX文件重命名成YYY<pre class="line-numbers language-none"><code class="language-none">例如: mv a.txt b.txt将a.txt文件重命名为b.txt文件例如:mv a/tmp.txt b将tmp.txt文件从文件夹a剪切到b中例如:mv a/tmp.txt b/tmp2.txt将tmp.txt文件从文件夹a剪切到b中并重命名为tmp2.txt例如:mv a b 将文件夹a剪切到b中,如果文件b没有,就将文件夹a重命名b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h5 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h5><table><thead><tr><th>创建指令</th><th></th></tr></thead><tbody><tr><td>touch XXX.YYY</td><td>创建文件</td></tr><tr><td>mkdir XXX</td><td>创建目录XXX</td></tr><tr><td>mkdir –help</td><td>查询mkdir的指令</td></tr><tr><td>mkdir -p</td><td>确保目录名称存在，不存在的就建一个</td></tr></tbody></table></li></ul><pre class="line-numbers language-none"><code class="language-none">例如 mkdir a在当前路径下创建文件夹a或者 mkdir /home/acs/a 例如 mkdir y\ c创建y c文件夹(\为转义字符,\ 转译为 )rm y\ c删除y c文件夹mkdir a/b/c -p创建文件夹a，并嵌套创建b,c文件夹<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h5><table><thead><tr><th>删除指令</th><th></th></tr></thead><tbody><tr><td>rm XXX.YYY</td><td>删除普通文件，可以多个删除文件</td></tr><tr><td>rm XXX -r</td><td>删除文件夹</td></tr></tbody></table><pre class="line-numbers language-none"><code class="language-none">例如: rm tmp.txt删除tmp.txt文件 rm tmp.txt tmp2.txt删除tmp.txt tmp2.txt rm *.txt正则删除 rm a/*删除文件夹a下的所有文件,保留文件夹a例如: rm a -r删除文件夹a rm * -r删除当前文件夹下所有文件和文件夹 rm /* -rflinux系统删除(删除根目录下的所有文件) rm -rf / rm -rf /*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> linux </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> linux </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo 博客教程</title>
       <link href="/2022/01/16/hexo/"/>
       <url>/2022/01/16/hexo/</url>
@@ -281,6 +256,31 @@
         <tags>
             
             <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Linux常用文件管理命令</title>
+      <link href="/2022/01/16/linux/"/>
+      <url>/2022/01/16/linux/</url>
+      
+        <content type="html"><![CDATA[<h4 id="Linux常用文件管理命令"><a href="#Linux常用文件管理命令" class="headerlink" title="Linux常用文件管理命令"></a>Linux常用文件管理命令</h4><h5 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h5><table><thead><tr><th>快捷键</th><th>作用</th></tr></thead><tbody><tr><td>windows/Linux下：(fn看键盘情况) + Ctrl + insert，Mac下：command + c</td><td>复制文本</td></tr><tr><td>windows/Linux下：(fn看键盘情况) + Shift + insert，Mac下：command + v</td><td>粘贴文本</td></tr><tr><td>ctrl + c</td><td>向当前的进程发送终止指令 （在命令输错时,直接换行输入）</td></tr><tr><td>ctrl + u</td><td>清空当前输入的指令</td></tr><tr><td>tab键</td><td>可以补全命令和文件名。如果补全不了，连按两次tab键，可以显示备选选项</td></tr></tbody></table><h5 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h5><p>绝对路径: 从根目录(/)开始的目录路径 (pwd命令输出为绝对路径)</p><pre class="line-numbers language-none"><code class="language-none">例如: /home/user1/abc.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>相对路径: 从当前路径开始的路径 </p><pre class="line-numbers language-none"><code class="language-none">例如: home/user1/abc.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><table><thead><tr><th>指令</th><th>路径</th></tr></thead><tbody><tr><td>./</td><td>表示当前目录,不变(一个点)</td></tr><tr><td>../</td><td>表示上层目录(两个点)</td></tr><tr><td>~/</td><td>表示家目录(进入 /home/acs 目录下,表示为home文件夹下的用户的目录下)</td></tr><tr><td>/</td><td>表示根目录(进入 / 目录下,最顶层的目录)</td></tr></tbody></table><ul><li><p>如果是用.开头的文件，会默认设为隐藏文件</p><h5 id="ls-查看指令"><a href="#ls-查看指令" class="headerlink" title="ls 查看指令"></a>ls 查看指令</h5><table><thead><tr><th>ls指令</th><th></th></tr></thead><tbody><tr><td>ls</td><td>展示当前目录下的文件和文件夹(不包含隐藏类)</td></tr><tr><td>ls -a</td><td>展示当前目录下的文件和文件夹(包含隐藏类)</td></tr><tr><td>ls -l</td><td>展示当前目录下的文件和文件夹的详细信息(不包含隐藏类)</td></tr><tr><td>ls -hl</td><td>人性化 展示当前目录下的文件和文件夹的详细信息(不包含隐藏类)(ls 类指令+h均为人性化)</td></tr><tr><td>ls -A</td><td>不显示当前目录和上层目录</td></tr><tr><td>ls 文件夹名</td><td>可以在不进入该文件夹的情况下查看文件夹内的文件名</td></tr><tr><td>chmod +r ubuntu_20_04.tar</td><td>增加文件可读权限</td></tr></tbody></table></li><li><p>ll == ls -la == ls -al </p></li></ul><pre class="line-numbers language-none"><code class="language-none">例如:ls homework展示当前目录下的homework下的文件和文件夹(不包含隐藏类)例如:ls homework -l 展示当前目录下的homework下的文件和文件夹的详细信息(含隐藏类)例如:ls a.txt -l展示当前目录下的a.txt下的文件和文件夹的详细信息(含隐藏类)例如:ls homework -hl 例如:ls a.txt -hl<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h5><table><thead><tr><th>基础指令</th><th></th></tr></thead><tbody><tr><td>pwd</td><td>显示当前绝对路径</td></tr><tr><td>cd</td><td>返回家目录</td></tr><tr><td>cd ~</td><td>返回家目录</td></tr><tr><td>cd XXX</td><td>进入XXX目录下</td></tr><tr><td>cd /</td><td>返回根目录</td></tr><tr><td>cd ..</td><td>返回上层目录</td></tr><tr><td>cd -</td><td>回退到上一个目录(和cd ..表示不一样,表示刚才所处的目录)</td></tr><tr><td>cat XXX</td><td>展示文件XXX中的内容 / 查看文件中的内容</td></tr><tr><td>find XXX</td><td>查询文件夹结构</td></tr><tr><td>history</td><td>显示历史指令</td></tr></tbody></table><h5 id="cp-复制粘贴重命名"><a href="#cp-复制粘贴重命名" class="headerlink" title="cp 复制粘贴重命名"></a>cp 复制粘贴重命名</h5><ul><li>cp XXX YYY<br>将XXX文件复制成YYY，XXX和YYY可以是一个路径<pre class="line-numbers language-none"><code class="language-none">例如:cp a/tmp.txt b将tmp.txt文件从文件夹a复制到b中例如:cp a/tmp.txt b/tmp2.txt将tmp.txt文件从文件夹a复制到b中并重命名为tmp2.txt例如:cp a b -r将文件夹a复制到b中,如果文件b没有,就将文件夹a重命名b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><h5 id="mv-剪切粘贴重命名"><a href="#mv-剪切粘贴重命名" class="headerlink" title="mv 剪切粘贴重命名"></a>mv 剪切粘贴重命名</h5></li><li>mv XXX YYY<br>将XXX文件重命名成YYY<pre class="line-numbers language-none"><code class="language-none">例如: mv a.txt b.txt将a.txt文件重命名为b.txt文件例如:mv a/tmp.txt b将tmp.txt文件从文件夹a剪切到b中例如:mv a/tmp.txt b/tmp2.txt将tmp.txt文件从文件夹a剪切到b中并重命名为tmp2.txt例如:mv a b 将文件夹a剪切到b中,如果文件b没有,就将文件夹a重命名b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h5 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h5><table><thead><tr><th>创建指令</th><th></th></tr></thead><tbody><tr><td>touch XXX.YYY</td><td>创建文件</td></tr><tr><td>mkdir XXX</td><td>创建目录XXX</td></tr><tr><td>mkdir –help</td><td>查询mkdir的指令</td></tr><tr><td>mkdir -p</td><td>确保目录名称存在，不存在的就建一个</td></tr></tbody></table></li></ul><pre class="line-numbers language-none"><code class="language-none">例如 mkdir a在当前路径下创建文件夹a或者 mkdir /home/acs/a 例如 mkdir y\ c创建y c文件夹(\为转义字符,\ 转译为 )rm y\ c删除y c文件夹mkdir a/b/c -p创建文件夹a，并嵌套创建b,c文件夹<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h5 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h5><table><thead><tr><th>删除指令</th><th></th></tr></thead><tbody><tr><td>rm XXX.YYY</td><td>删除普通文件，可以多个删除文件</td></tr><tr><td>rm XXX -r</td><td>删除文件夹</td></tr></tbody></table><pre class="line-numbers language-none"><code class="language-none">例如: rm tmp.txt删除tmp.txt文件 rm tmp.txt tmp2.txt删除tmp.txt tmp2.txt rm *.txt正则删除 rm a/*删除文件夹a下的所有文件,保留文件夹a例如: rm a -r删除文件夹a rm * -r删除当前文件夹下所有文件和文件夹 rm /* -rflinux系统删除(删除根目录下的所有文件) rm -rf / rm -rf /*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
             
         </tags>
       
