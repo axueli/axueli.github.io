@@ -6,7 +6,7 @@
   <link href="https://axueli.github.io/atom.xml" rel="self"/>
   
   <link href="https://axueli.github.io/"/>
-  <updated>2022-01-21T14:26:35.454Z</updated>
+  <updated>2022-01-22T03:23:04.980Z</updated>
   <id>https://axueli.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://axueli.github.io/2022/01/22/hexo/"/>
     <id>https://axueli.github.io/2022/01/22/hexo/</id>
     <published>2022-01-22T09:38:26.000Z</published>
-    <updated>2022-01-21T14:26:35.454Z</updated>
+    <updated>2022-01-22T03:23:04.980Z</updated>
     
     
       
@@ -92,6 +92,33 @@
   </entry>
   
   <entry>
+    <title>shell常用命令</title>
+    <link href="https://axueli.github.io/2022/01/20/shell/"/>
+    <id>https://axueli.github.io/2022/01/20/shell/</id>
+    <published>2022-01-20T09:38:26.000Z</published>
+    <updated>2022-01-22T03:44:30.072Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4 id=&quot;shell&quot;&gt;&lt;a href=&quot;#shell&quot; class=&quot;headerlink&quot; title=&quot;shell&quot;&gt;&lt;/a&gt;shell&lt;/h4&gt;&lt;h5 id=&quot;概论&quot;&gt;&lt;a href=&quot;#概论&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
+    
+    
+    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+    <category term="shell" scheme="https://axueli.github.io/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>tmux常用命令</title>
     <link href="https://axueli.github.io/2022/01/20/tmux/"/>
     <id>https://axueli.github.io/2022/01/20/tmux/</id>
@@ -117,36 +144,11 @@
   </entry>
   
   <entry>
-    <title>shell常用命令</title>
-    <link href="https://axueli.github.io/2022/01/20/shell/"/>
-    <id>https://axueli.github.io/2022/01/20/shell/</id>
-    <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:29:19.807Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;shell&quot;&gt;&lt;a href=&quot;#shell&quot; class=&quot;headerlink&quot; title=&quot;shell&quot;&gt;&lt;/a&gt;shell&lt;/h4&gt;&lt;h5 id=&quot;概论&quot;&gt;&lt;a href=&quot;#概论&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
-    
-    
-    <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
     <title>tmux配置文件</title>
     <link href="https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/"/>
     <id>https://axueli.github.io/2022/01/20/tmux-pei-zhi-wen-jian/</id>
     <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:24:08.275Z</updated>
+    <updated>2022-01-22T03:47:49.615Z</updated>
     
     
       
@@ -164,8 +166,12 @@ setw -g</summary>
     
     <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
     
+    <category term="配置文件" scheme="https://axueli.github.io/categories/linux/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
     
     <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+    <category term="配置文件" scheme="https://axueli.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
   </entry>
   
@@ -199,7 +205,7 @@ setw -g</summary>
     <link href="https://axueli.github.io/2022/01/20/vim-pei-zhi-wen-jian/"/>
     <id>https://axueli.github.io/2022/01/20/vim-pei-zhi-wen-jian/</id>
     <published>2022-01-20T09:38:26.000Z</published>
-    <updated>2022-01-21T14:24:27.049Z</updated>
+    <updated>2022-01-22T03:48:38.674Z</updated>
     
     
       
@@ -217,8 +223,12 @@ setw -g</summary>
     
     <category term="linux" scheme="https://axueli.github.io/categories/linux/"/>
     
+    <category term="配置文件" scheme="https://axueli.github.io/categories/linux/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
     
     <category term="linux" scheme="https://axueli.github.io/tags/linux/"/>
+    
+    <category term="配置文件" scheme="https://axueli.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
   </entry>
   
