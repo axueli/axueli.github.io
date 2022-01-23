@@ -415,7 +415,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-22
+                    2022-01-23
                 </div>
                 
 
@@ -452,18 +452,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="管道-及-其他"><a href="#管道-及-其他" class="headerlink" title="管道 及 其他"></a>管道 及 其他</h4><h5 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h5><p>管道类似于文件重定向，可以将前一个命令的stdout重定向到下一个命令的stdin。</p>
-<h5 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h5><ol>
+                <h4 id="管道-及-其他"><a href="#管道-及-其他" class="headerlink" title="管道 及 其他"></a>管道 及 其他</h4><h4 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h4><p>管道类似于文件重定向，可以将前一个命令的stdout重定向到下一个命令的stdin。</p>
+<h4 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h4><ol>
 <li>管道命令仅处理stdout，会忽略stderr。</li>
 <li>管道右边的命令必须能接受stdin。</li>
-<li>多个管道命令可以串联。<h5 id="与文件重定向的区别"><a href="#与文件重定向的区别" class="headerlink" title="与文件重定向的区别"></a>与文件重定向的区别</h5></li>
+<li>多个管道命令可以串联。<h4 id="与文件重定向的区别"><a href="#与文件重定向的区别" class="headerlink" title="与文件重定向的区别"></a>与文件重定向的区别</h4></li>
 </ol>
 <ul>
 <li>文件重定向左边为命令，右边为文件。</li>
-<li>管道左右两边均为命令，左边有stdout，右边有stdin。<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5>统计当前目录下所有python文件的总行数，其中find、xargs、wc等命令可以参考常用命令这一节内容。<pre class="line-numbers language-none"><code class="language-none">find . -name '*.py' | xargs cat | wc -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><h5 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h5>Linux系统中会用很多环境变量来记录配置信息。<br>环境变量类似于全局变量，可以被各个进程访问到。我们可以通过修改环境变量来方便地修改系统配置。</li>
+<li>管道左右两边均为命令，左边有stdout，右边有stdin。<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4>统计当前目录下所有python文件的总行数，其中find、xargs、wc等命令可以参考常用命令这一节内容。<pre class="line-numbers language-none"><code class="language-none">find . -name '*.py' | xargs cat | wc -l<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h4><h4 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h4>Linux系统中会用很多环境变量来记录配置信息。<br>环境变量类似于全局变量，可以被各个进程访问到。我们可以通过修改环境变量来方便地修改系统配置。</li>
 </ul>
-<h5 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h5><p>列出当前环境下的所有环境变量：</p>
+<h4 id="查看"><a href="#查看" class="headerlink" title="查看"></a>查看</h4><p>列出当前环境下的所有环境变量：</p>
 <pre class="line-numbers language-none"><code class="language-none">env  # 显示当前用户的变量
 set  # 显示当前shell的变量，包括当前用户的变量;
 export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
@@ -476,7 +476,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 <li>每次启动bash，都会先执行~/.bashrc。</li>
 <li>每次ssh登陆远程服务器，都会启动一个bash命令行给我们。</li>
 <li>每次tmux新开一个pane，都会启动一个bash命令行给我们。</li>
-<li>所以未来所有新开的环境都会加载我们修改的内容。<h5 id="常见环境变量"><a href="#常见环境变量" class="headerlink" title="常见环境变量"></a>常见环境变量</h5><table>
+<li>所以未来所有新开的环境都会加载我们修改的内容。<h4 id="常见环境变量"><a href="#常见环境变量" class="headerlink" title="常见环境变量"></a>常见环境变量</h4><table>
 <thead>
 <tr>
 <th>路径</th>
@@ -516,7 +516,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 <td>存放Java导入类的路径，内容是以冒号分隔的路径列表。</td>
 </tr>
 </tbody></table>
-<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><h5 id="系统状况"><a href="#系统状况" class="headerlink" title="系统状况"></a>系统状况</h5><table>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><h4 id="系统状况"><a href="#系统状况" class="headerlink" title="系统状况"></a>系统状况</h4><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -578,7 +578,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 </tbody></table>
 </li>
 </ul>
-<h5 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h5><table>
+<h4 id="文件权限"><a href="#文件权限" class="headerlink" title="文件权限"></a>文件权限</h4><table>
 <thead>
 <tr>
 <th>命令</th>
@@ -606,7 +606,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 <td>递归修改整个文件夹的权限</td>
 </tr>
 </tbody></table>
-<h5 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h5><ol>
+<h4 id="文件检索"><a href="#文件检索" class="headerlink" title="文件检索"></a>文件检索</h4><ol>
 <li>find /path/to/directory/ -name ‘<em>.py’    搜索某个文件路径下的所有</em>.py文件</li>
 <li>grep xxx        从stdin中读入若干行数据，如果某行中包含xxx，则输出该行；否则忽略该行。</li>
 <li>wc        统计行数、单词数、字节数<ul>
@@ -636,7 +636,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 </ul>
 </li>
 <li>xargs    将stdin中的数据用空格或回车分割成命令行参数<ul>
-<li>find . -name ‘*.py’ | xargs cat | wc -l    统计当前目录下所有python文件的总行数<h5 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h5></li>
+<li>find . -name ‘*.py’ | xargs cat | wc -l    统计当前目录下所有python文件的总行数<h4 id="查看文件内容"><a href="#查看文件内容" class="headerlink" title="查看文件内容"></a>查看文件内容</h4></li>
 </ul>
 </li>
 <li>more        浏览文件内容<ul>
@@ -659,10 +659,10 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 </ul>
 </li>
 <li>tail -3 xxx        展示xxx末尾3行内容<ul>
-<li>同时支持从stdin读入内容<h5 id="用户相关"><a href="#用户相关" class="headerlink" title="用户相关"></a>用户相关</h5></li>
+<li>同时支持从stdin读入内容<h4 id="用户相关"><a href="#用户相关" class="headerlink" title="用户相关"></a>用户相关</h4></li>
 </ul>
 </li>
-<li>history        展示当前用户的历史操作。内容存放在~/.bash_history中<h5 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h5></li>
+<li>history        展示当前用户的历史操作。内容存放在~/.bash_history中<h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4></li>
 <li>md5sum        计算md5哈希值<ul>
 <li>可以从stdin读入内容</li>
 <li>也可以在命令行参数中传入文件名列表；</li>
@@ -679,7 +679,7 @@ export  # 显示当前导出成用户变量的shell变量<span aria-hidden="true
 <li>tar -zxvf xxx.tar.gz        解压缩</li>
 </ul>
 </li>
-<li>diff xxx yyy        查找文件xxx与yyy的不同点<h5 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h5></li>
+<li>diff xxx yyy        查找文件xxx与yyy的不同点<h4 id="安装软件"><a href="#安装软件" class="headerlink" title="安装软件"></a>安装软件</h4></li>
 <li>sudo command        以root身份执行command命令</li>
 <li>apt-get install xxx        安装软件</li>
 <li>pip install xxx –user –upgrade        安装python包</li>

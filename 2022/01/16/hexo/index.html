@@ -415,14 +415,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-22
+                    2022-01-23
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    411
+                    428
                 </div>
                 
 
@@ -452,16 +452,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="Hexo-博客教程"><a href="#Hexo-博客教程" class="headerlink" title="Hexo 博客教程"></a>Hexo 博客教程</h4><p>安装需要环境和工具Node.js 和 Git 和Hexo 创建 Github等其他服务器</p>
+                <h4 id="Hexo-博客教程"><a href="#Hexo-博客教程" class="headerlink" title="Hexo 博客教程"></a>Hexo 博客教程</h4><h4 id="搭建工具及环境"><a href="#搭建工具及环境" class="headerlink" title="搭建工具及环境"></a>搭建工具及环境</h4><p>安装需要环境和工具Node.js 和 Git 和Hexo 创建 Github等其他服务器</p>
 <p>在Github中新建项目  项目名 为 Github 账号名.github.io  ,其他选项基本默认即可，<br>例如: </p>
 <pre class="line-numbers language-none"><code class="language-none">axueli.github.io<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>在文件夹中右键 Git base 输入 ssh 确定是否安装ssh</p>
+<h4 id="ssh公钥"><a href="#ssh公钥" class="headerlink" title="ssh公钥"></a>ssh公钥</h4><p>在文件夹中右键 Git base 输入 ssh 确定是否安装ssh</p>
 <p>输入命令行</p>
 <pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t -rsa -C "邮箱地址" 		邮箱地址为Github注册邮箱<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>后面点击四次回车<br>在C:\用户\Administrator.ssh 中找到 id_rsa.pub 文件<br>Ctrl + a 全选 复制 电脑公钥 到 Github中的ssh密钥<br>在Git Base中输入命令行</p>
 <pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com		测试ssh是否绑定成功<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>在 D 盘中新建 Blog 文件夹 </p>
+<h4 id="本地创建Hexo工程"><a href="#本地创建Hexo工程" class="headerlink" title="本地创建Hexo工程"></a>本地创建Hexo工程</h4><p>在 D 盘中新建 Blog 文件夹 </p>
 <p>在Blog文件夹的根目录中找到 _config.yml 文件 ,进入后下拉到底更改为下面的命令</p>
 <pre class="line-numbers language-none"><code class="language-none">deploy:
   type: git

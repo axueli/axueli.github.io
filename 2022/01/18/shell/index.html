@@ -419,7 +419,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-22
+                    2022-01-23
                 </div>
                 
 
@@ -456,17 +456,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h4><h5 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h5><p>shell是我们通过命令行与操作系统沟通的语言。<br>shell脚本可以直接在命令行中执行，也可以将一套逻辑组织成一个文件，方便复用。<br> AC Terminal中的命令行可以看成是一个“shell脚本在逐行执行”。<br>Linux中常见的shell脚本有很多种，常见的有：</p>
+                <h4 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h4><h4 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h4><p>shell是我们通过命令行与操作系统沟通的语言。<br>shell脚本可以直接在命令行中执行，也可以将一套逻辑组织成一个文件，方便复用。<br> AC Terminal中的命令行可以看成是一个“shell脚本在逐行执行”。<br>Linux中常见的shell脚本有很多种，常见的有：</p>
 <pre class="line-numbers language-none"><code class="language-none">Bourne Shell(/usr/bin/sh或/bin/sh)
 Bourne Again Shell(/bin/bash)
 C Shell(/usr/bin/csh)
 K Shell(/usr/bin/ksh)
 zsh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>Linux系统中一般默认使用bash，所以接下来讲解bash中的语法。<br> 文件开头需要写#！ /bin/bash，指明bash为脚本解释器。</p>
-<h6 id="脚本实例"><a href="#脚本实例" class="headerlink" title="脚本实例"></a>脚本实例</h6><p>新建一个test.sh文件，内容如下：</p>
+<h4 id="脚本实例"><a href="#脚本实例" class="headerlink" title="脚本实例"></a>脚本实例</h4><p>新建一个test.sh文件，内容如下：</p>
 <pre class="line-numbers language-none"><code class="language-none">#! /bin/bash
 echo "Hello World!"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h6 id="运行方式"><a href="#运行方式" class="headerlink" title="运行方式"></a>运行方式</h6><p>作为可执行文件</p>
+<h4 id="运行方式"><a href="#运行方式" class="headerlink" title="运行方式"></a>运行方式</h4><p>作为可执行文件</p>
 <pre class="line-numbers language-none"><code class="language-none">acs@9e0ebfcd82d7:~$ chmod +x test.sh  # 使脚本具有可执行权限
 acs@9e0ebfcd82d7:~$ ./test.sh  # 当前路径下执行
 Hello World!  # 脚本输出
@@ -478,10 +478,10 @@ Hello World!  # 脚本输出<span aria-hidden="true" class="line-numbers-rows"><
 <pre class="line-numbers language-none"><code class="language-none">acs@9e0ebfcd82d7:~$ bash test.sh
 Hello World!  # 脚本输出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><h6 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h6><p>每行中#之后的内容均是注释</p>
+<h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><h5 id="单行注释"><a href="#单行注释" class="headerlink" title="单行注释"></a>单行注释</h5><p>每行中#之后的内容均是注释</p>
 <pre class="line-numbers language-none"><code class="language-none">#这是一行注释
 echo 'Hello World'  #  这也是注释<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-<h6 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h6><pre class="line-numbers language-none"><code class="language-none">:&lt;&lt;EOF
+<h5 id="多行注释"><a href="#多行注释" class="headerlink" title="多行注释"></a>多行注释</h5><pre class="line-numbers language-none"><code class="language-none">:&lt;&lt;EOF
 第一行注释
 第二行注释
 第三行注释
@@ -498,27 +498,27 @@ abc
 第二行注释
 第三行注释
 !<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><h6 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h6><p>定义变量，不需要加$符号，例如：</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><h5 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h5><p>定义变量，不需要加$符号，例如：</p>
 <pre class="line-numbers language-none"><code class="language-none">name1='yxc'  # 单引号定义字符串
 name2="yxc"  # 双引号定义字符串
 name3=yxc    # 也可以不加引号，同样表示字符串<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<h6 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h6><p>使用变量，需要加上￥符号，或者￥{}符号，花括号是可以选择的，主要为了帮助解释器识别变量边界</p>
+<h5 id="使用变量"><a href="#使用变量" class="headerlink" title="使用变量"></a>使用变量</h5><p>使用变量，需要加上￥符号，或者￥{}符号，花括号是可以选择的，主要为了帮助解释器识别变量边界</p>
 <pre class="line-numbers language-none"><code class="language-none">name=yxc
 echo $name  # 输出yxc
 echo ${name}  # 输出yxc
 echo ${name}acwing  # 输出yxcacwing<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h6 id="只读变量"><a href="#只读变量" class="headerlink" title="只读变量"></a>只读变量</h6><p>使用readonly或者declare可以将变量变为只读</p>
+<h5 id="只读变量"><a href="#只读变量" class="headerlink" title="只读变量"></a>只读变量</h5><p>使用readonly或者declare可以将变量变为只读</p>
 <pre class="line-numbers language-none"><code class="language-none">name=yxc
 readonly name
 declare -r name  # 两种写法均可
 name=abc  # 会报错，因为此时name只读<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h6 id="删除变量"><a href="#删除变量" class="headerlink" title="删除变量"></a>删除变量</h6><p>unset 可以删除变量</p>
+<h5 id="删除变量"><a href="#删除变量" class="headerlink" title="删除变量"></a>删除变量</h5><p>unset 可以删除变量</p>
 <pre class="line-numbers language-none"><code class="language-none">name=yxc
 unset name
 echo $name  # 输出空行<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<h6 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h6><ol>
+<h5 id="变量类型"><a href="#变量类型" class="headerlink" title="变量类型"></a>变量类型</h5><ol>
 <li>自定义变量（局部变量）子进程不能访问的变量</li>
 <li>环境变量（全局变量）子进程可以访问的变量<br>自定义变量改为环境变量<pre class="line-numbers language-none"><code class="language-none">acs@9e0ebfcd82d7:~$ name=yxc  # 定义变量
 acs@9e0ebfcd82d7:~$ export name  # 第一种方法
