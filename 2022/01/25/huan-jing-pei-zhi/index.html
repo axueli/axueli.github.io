@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="linux">
+    <meta name="keywords" content="ACM,LeetCode,AcWing,算法，AtCode，Codeforces，C++,java,linux等">
     <meta name="description" content="本网站是个人兴趣爱好，总结分享经验，记录生活点滴的平台，希望在以后的学习旅途中，走出自己的风景。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>vim配置文件 | 啊、雪梨のBlog</title>
+    <title>啊、雪梨のBlog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -262,12 +262,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">vim配置文件</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -381,33 +381,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/linux/">
-                                <span class="chip bg-color">linux</span>
-                            </a>
-                        
-                            <a href="/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">
-                                <span class="chip bg-color">配置文件</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/linux/" class="post-category">
-                                linux
-                            </a>
-                        
-                            <a href="/categories/linux/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/" class="post-category">
-                                配置文件
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -416,28 +395,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-17
+                    2022-01-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-22
+                    2022-01-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    555
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    2 分
                 </div>
                 
 
@@ -460,250 +439,40 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre class="line-numbers language-none"><code class="language-none">" An example for a vimrc file.
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"             for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"           for OpenVMS:  sys$login:.vimrc
+                <h4 id="windows下配置java"><a href="#windows下配置java" class="headerlink" title="windows下配置java"></a>windows下配置java</h4><p>检查Java安装是否成功 </p>
+<pre class="line-numbers language-none"><code class="language-none">java -version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h5><p>高级系统设置点击环境变量 在 系统变量 新建<br>变量名: JAVA_HOME<br>变量值: 安装JDK的路径<br>在系统变量的Path中编辑新建</p>
+<pre class="line-numbers language-none"><code class="language-none">%JAVA_HOME%\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="windows下配置tomcat"><a href="#windows下配置tomcat" class="headerlink" title="windows下配置tomcat"></a>windows下配置tomcat</h4><p>安装前提,安装了JDK<br>高级系统设置点击环境变量 在 系统变量 新建<br>变量名: CATALINA_HOME<br>变量值: 解压后Tomcat的文件夹路径</p>
+<pre class="line-numbers language-none"><code class="language-none">例如 D:\apache-tomcat-9.0.12<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>在系统变量的Path中编辑新建</p>
+<pre class="line-numbers language-none"><code class="language-none">%CATALINA_HOME%\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="Tomcat启动和验证配置环境变量是否成功"><a href="#Tomcat启动和验证配置环境变量是否成功" class="headerlink" title="Tomcat启动和验证配置环境变量是否成功"></a>Tomcat启动和验证配置环境变量是否成功</h5><p>Windows键+R，输入cmd，回车 ，输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">startup.bat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>之后出现了Tomcat的启动窗口，若没有报错或者一闪而过，那么说明启动成功了，让黑窗口保持运行，不能关，否则你的服务器也就关闭了，若出现了报错或者一闪而过(启动失败)，可能是你的端口被占用，Tomcat默认的端口是8080，出现这两种情况那么可以试试以下两种：<br>一、重启电脑后再次按以上步骤启动Tomcat尝试是否能解决；<br>二、修改Tomcat端口号后，再用以上步骤启动Tomcat。|| 修改端口号教程<br>之后验证环境变量是否配置成功，浏览器输入一下 </p>
+<pre class="line-numbers language-none"><code class="language-none">http://localhost:8080 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>切记，黑窗口一定不能关闭，否则等于Tomcat也关了！！！</p>
+<h4 id="Tomcat出现乱码"><a href="#Tomcat出现乱码" class="headerlink" title="Tomcat出现乱码"></a>Tomcat出现乱码</h4><p>在tomcat的conf文件夹下的logging-properties文件中找到</p>
+<pre class="line-numbers language-none"><code class="language-none">java.util.logging.ConsoleHandler.encoding = UTF-8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>修改为</p>
+<pre class="line-numbers language-none"><code class="language-none">java.util.logging.ConsoleHandler.encoding = GBK<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-" allow backspacing over everything in insert mode
-set backspace=indent,eol,start
-
-if has("vms")
-  set nobackup          " do not keep a backup file, use versions instead
-else
-  set backup            " keep a backup file
-endif
-set history=50          " keep 50 lines of command line history
-set ruler               " show the cursor position all the time
-set showcmd             " display incomplete commands
-set incsearch           " do incremental searching
-"==========================================================================
-"My Setting-sunshanlu
-"==========================================================================
-vmap &lt;leader&gt;y :w! /tmp/vitmp&lt;CR&gt;
-nmap &lt;leader&gt;p :r! cat /tmp/vitmp&lt;CR&gt;
-
-"语法高亮
-syntax enable
-syntax on
-"显示行号
-set nu
-
-"修改默认注释颜色
-"hi Comment ctermfg=DarkCyan
-"允许退格键删除
-"set backspace=2
-"启用鼠标
-set mouse=a
-set selection=exclusive
-set selectmode=mouse,key
-"按C语言格式缩进
-set cindent
-set autoindent
-set smartindent
-set shiftwidth=4
-
-" 允许在有未保存的修改时切换缓冲区
-"set hidden
-
-" 设置无备份文件
-set writebackup
-set nobackup
-
-"显示括号匹配
-set showmatch
-"括号匹配显示时间为1(单位是十分之一秒)
-set matchtime=5
-"显示当前的行号列号：
-set ruler
-"在状态栏显示正在输入的命令
-set showcmd
-
-set foldmethod=syntax
-"默认情况下不折叠
-set foldlevel=100
-" 开启状态栏信息
-set laststatus=2
-" 命令行的高度，默认为1，这里设为2
-set cmdheight=2
-
-
-" 显示Tab符，使用一高亮竖线代替
-set list
-"set listchars=tab:\|\ ,
-set listchars=tab:&gt;-,trail:-
-
-
-"侦测文件类型
-filetype on
-"载入文件类型插件
-filetype plugin on
-"为特定文件类型载入相关缩进文件
-filetype indent on
-" 启用自动补全
-filetype plugin indent on 
-
-
-"设置编码自动识别, 中文引号显示
-filetype on "打开文件类型检测
-"set fileencodings=euc-cn,ucs-bom,utf-8,cp936,gb2312,gb18030,gbk,big5,euc-jp,euc-kr,latin1
-set fileencodings=utf-8,gb2312,gbk,gb18030
-"这个用能很给劲，不管encoding是什么编码，都能将文本显示汉字
-"set termencoding=gb2312
-set termencoding=utf-8
-"新建文件使用的编码
-set fileencoding=utf-8
-"set fileencoding=gb2312
-"用于显示的编码，仅仅是显示
-set encoding=utf-8
-"set encoding=utf-8
-"set encoding=euc-cn
-"set encoding=gbk
-"set encoding=gb2312
-"set ambiwidth=double
-set fileformat=unix
-
-
-"设置高亮搜索
-set hlsearch
-"在搜索时，输入的词句的逐字符高亮
-set incsearch
-
-" 着色模式
-set t_Co=256
-"colorscheme wombat256mod
-"colorscheme gardener
-"colorscheme elflord
-colorscheme desert
-"colorscheme evening
-"colorscheme darkblue
-"colorscheme torte
-"colorscheme default
-
-" 字体 &amp;&amp; 字号
-set guifont=Monaco:h10
-"set guifont=Consolas:h10
-
-" :LoadTemplate       根据文件后缀自动加载模板
-"let g:template_path='/home/ruchee/.vim/template/'
-
-" :AuthorInfoDetect   自动添加作者、时间等信息，本质是NERD_commenter &amp;&amp; authorinfo的结合
-""let g:vimrc_author='sunshanlu'
-""let g:vimrc_email='sunshanlu@baidu.com'
-""let g:vimrc_homepage='http://www.sunshanlu.com'
-"
-"
-" Ctrl + E            一步加载语法模板和作者、时间信息
-""map &lt;c-e&gt; &lt;ESC&gt;:AuthorInfoDetect&lt;CR&gt;&lt;ESC&gt;Gi
-""imap &lt;c-e&gt; &lt;ESC&gt;:AuthorInfoDetect&lt;CR&gt;&lt;ESC&gt;Gi
-""vmap &lt;c-e&gt; &lt;ESC&gt;:AuthorInfoDetect&lt;CR&gt;&lt;ESC&gt;Gi
-
-
-
-" ======= 引号 &amp;&amp; 括号自动匹配 ======= "
-"
-":inoremap ( ()&lt;ESC&gt;i
-
-":inoremap ) &lt;c-r&gt;=ClosePair(')')&lt;CR&gt;
-"
-":inoremap { {}&lt;ESC&gt;i
-"
-":inoremap } &lt;c-r&gt;=ClosePair('}')&lt;CR&gt;
-"
-":inoremap [ []&lt;ESC&gt;i
-"
-":inoremap ] &lt;c-r&gt;=ClosePair(']')&lt;CR&gt;
-"
-":inoremap &lt; &lt;&gt;&lt;ESC&gt;i
-"
-":inoremap &gt; &lt;c-r&gt;=ClosePair('&gt;')&lt;CR&gt;
-"
-"":inoremap " ""&lt;ESC&gt;i
-"
-":inoremap ' ''&lt;ESC&gt;i
-"
-":inoremap ` ``&lt;ESC&gt;i
-"
-":inoremap * **&lt;ESC&gt;i
-
-" 每行超过80个的字符用下划线标示
-""au BufRead,BufNewFile *.s,*.asm,*.h,*.c,*.cpp,*.java,*.cs,*.lisp,*.el,*.erl,*.tex,*.sh,*.lua,*.pl,*.php,*.tpl,*.py,*.rb,*.erb,*.vim,*.js,*.jade,*.coffee,*.css,*.xml,*.html,*.shtml,*.xhtml Underlined /.\%81v/
-"
-"
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &amp;guioptions = substitute(&amp;guioptions, "t", "", "g")
-
-" Don't use Ex mode, use Q for formatting
-map Q gq
-
-" This is an alternative that also works in block mode, but the deleted
-" text is lost and it only works for putting the current register.
-"vnoremap p "_dp
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &amp;t_Co &gt; 2 || has("gui_running")
-  syntax on
-  set hlsearch
-endif
-
-" Only do this part when compiled with support for autocommands.
-if has("autocmd")
-
-  " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
-  filetype plugin indent on
-
-  " Put these in an autocmd group, so that we can delete them easily.
-  augroup vimrcEx
-  au!
-
-  " For all text files set 'textwidth' to 80 characters.
-  autocmd FileType text setlocal textwidth=80
-
-  " When editing a file, always jump to the last known cursor position.
-  " Don't do it when the position is invalid or when inside an event handler
-  " (happens when dropping a file on gvim).
-  autocmd BufReadPost *
-    \ if line("'\"") &gt; 0 &amp;&amp; line("'\"") &lt;= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-
-  augroup END
-
-else
-
-  set autoindent                " always set autoindenting on
-
-endif " has("autocmd")
-
-" 增加标行高亮
-set cursorline
-hi CursorLine  cterm=NONE   ctermbg=darkred ctermfg=white
-
-" 设置tab是四个空格
-set ts=4
-set expandtab
-
-" 主要给Tlist使用
-let Tlist_Exit_OnlyWindow = 1
-let Tlist_Auto_Open = 1
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="windows下mysql环境配置"><a href="#windows下mysql环境配置" class="headerlink" title="windows下mysql环境配置"></a>windows下mysql环境配置</h4><p>在环境变量的系统变量中输入填入mysql的bin文件夹目录</p>
+<pre class="line-numbers language-none"><code class="language-none">例如: D:\mysql-8.0.28-winx64\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Windows键+R，输入cmd，回车 ，输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">mysqld --initialize-insecure --user=mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>初始化数据库，并设置默认root为空，初始化完成后，在mysql根目录中会自动生成data文件<br>再输入</p>
+<pre class="line-numbers language-none"><code class="language-none">mysqld -install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>为windows安装mysql服务，默认服务名为mysql<br>出现</p>
+<pre class="line-numbers language-none"><code class="language-none">service successfully installed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>表示配置完成<br>启动数据库</p>
+<pre class="line-numbers language-none"><code class="language-none">net start mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>输入</p>
+<pre class="line-numbers language-none"><code class="language-none">mysql -u root -p <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>不用输入密码直接回车<br>设置mysql数据库密码为123456，输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">alter user user() identified by "123456";<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>关闭mysql数据库,输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">net stop mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -719,7 +488,7 @@ let Tlist_Auto_Open = 1
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">axueli</a>
+                    <a href="/about" rel="external nofollow noreferrer">啊、雪梨</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -729,7 +498,7 @@ let Tlist_Auto_Open = 1
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/">https://axueli.github.io/2022/01/17/vim-pei-zhi-wen-jian/</a>
+                    <a href="https://axueli.github.io/2022/01/25/huan-jing-pei-zhi/">https://axueli.github.io/2022/01/25/huan-jing-pei-zhi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -742,7 +511,7 @@ let Tlist_Auto_Open = 1
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">axueli</a>
+                    <a href="/about" target="_blank">啊、雪梨</a>
                     !
                 </span>
             </div>
@@ -766,15 +535,7 @@ let Tlist_Auto_Open = 1
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/linux/">
-                                    <span class="chip bg-color">linux</span>
-                                </a>
-                            
-                                <a href="/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">
-                                    <span class="chip bg-color">配置文件</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -946,25 +707,74 @@ let Tlist_Auto_Open = 1
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/17/vim/">
+                <a href="/2022/02/15/xie-fa/">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="Vim常用命令">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/21.jpg" class="responsive-img" alt="Java基本">
                         
-                        <span class="card-title">Vim常用命令</span>
+                        <span class="card-title">Java基本</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Vim是一个著名的功能强大、高度可定制的文本编辑器。
+                            Java常用操作
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-17
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-15
                         </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/linux/" class="post-category">
+                                    linux
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/01/22/git/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/15.jpg" class="responsive-img" alt="Git基础教程">
+                        
+                        <span class="card-title">Git基础教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Git是一个开源的分布式版本控制系统
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-22
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -982,55 +792,6 @@ let Tlist_Auto_Open = 1
                     
                     <a href="/tags/linux/">
                         <span class="chip bg-color">linux</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/16/hexo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo 博客教程">
-                        
-                        <span class="card-title">Hexo 博客教程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Hexo是一个快速、简洁且高效的博客框架。
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-16
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/hexo/" class="post-category">
-                                    hexo
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
                     </a>
                     
                 </div>
@@ -1198,13 +959,6 @@ let Tlist_Auto_Open = 1
 
 </main>
 
-
-<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 

@@ -4,6 +4,119 @@
   
     
     <entry>
+      <title>操作系统</title>
+      <link href="/2022/02/17/cao-zuo-xi-tong/"/>
+      <url>/2022/02/17/cao-zuo-xi-tong/</url>
+      
+        <content type="html"><![CDATA[<h4 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h4><p>操作系统的特性：</p><ol><li>并发 ：指两个或多个事件在同一时间间隔内发生，宏观上是同时发生的，微观上是交替发生</li></ol><ul><li> 并行：指两个或多个事件在同一时刻同时发生</li></ul><ol start="2"><li>共享 ：共享即资源共享，是指系统中的资源可供内存中多个并发执行的进程共同使用。</li></ol><ul><li>互斥共享方式：系统中的某些资源，虽然可以提供给多个进程使用，但一个时间段内只允许一个进程访问该资源：系统中的某些资源，允许一个时间段内由多个进程“同时”对它们进行访问</li><li>同时共享方式</li></ul><ol start="3"><li>虚拟：虚拟是指把一个物理上的实体变为若干个逻辑上的对应物。物理实体（前者）是实际存在的，而逻辑上对应物（后者）是用户感受到的。</li></ol><ul><li>空分复用技术：空分复用技术</li><li>时分复用技术：虚拟技术中的“时分复用技术”。微观上处理机在各个微小的时间段内交替<br>着为各个进程服务</li></ul><ol start="4"><li>异步：异步是指，在多道程序环境下，允许多个程序并发执行，但由于资源有限，进程的执行不是一贯到底的，而是走走停停，以不可预知的速度向前推进，这就是进程的异步性。<br>并发和共享互为存在条件<br>没有并发和共享，就谈不上虚拟和异步，因此并发和共享是操作系统的两个最基本的特征<h4 id="os-的发展与分类"><a href="#os-的发展与分类" class="headerlink" title="os 的发展与分类"></a>os 的发展与分类</h4></li><li>手工操作阶段</li><li>批处理阶段</li></ol><ul><li>单道批处理系统<ul><li>主要优点：缓解了一定程度的人机速度矛盾，资源利用率有所提升。</li><li>主要缺点：内存中仅能有一道程序运行，只有该程序运行结束之后才能调入下一道程序CPU有大量的时间是在空闲等待I/O完成。资源利用率依然很低。</li></ul></li><li>多道批处理系统<ul><li>主要优点：多道程序并发执行，共享计算机源。资源利用率大幅提升，CPU和其他资源更能保持“忙碌”状态，系统吞吐量增大。</li><li>主要缺点：用户响应时间长，没有人机交互 功能（用户提交自己的作业之后就只能等待 计算机处理完成，中间不能控制自己的作业 执行。eg：无法调试程序/无法在程序运行过 程中输入一些参数）</li></ul></li></ul><ol start="3"><li>分时操作系统：计算机以时间片为单位轮流为各个用户/作业服务，各个用户可通过终端与计算机进行交互。<ul><li>主要优点：用户请求可以被即时响应，解决了人机交互问题。允许多个用户同时使用一台计算机，并且用 户对计算机的操作相互独立，感受不到别人的存在。 </li><li>主要缺点：不能优先处理一些紧急任务。操作系统对各个用户/作业都是完全公平的，循环地为每个用户/ 作业服务一个时间片，不区分任务的紧急性。</li></ul></li><li>实时操作系统：主要优点：能够优先响应一些紧急任务，某些紧急任务不需时间片排队。 在实时操作系统的控制下，计算机系统接收到外部信号后及时进行处理，并且要在严格的时限内处理完事 件。实时操作系统的主要特点是及时性和可靠性</li></ol><ul><li>硬实时操作系统：必须在绝对严格的规定时间内完成处理</li><li>软实时操作系统：偶尔可以违反规定时间</li></ul><ol start="5"><li>网络操作系统：是伴随着计算机网络的发展而诞生的，能把网络中各个计算机有机地结合起来，实现数据传 送等功能，实现网络中各种资源的共享（如文件共享）和各台计算机之间的通信。（如：Windows NT 就是 一种典型的网络操作系统，网站服务器就可以使用）</li><li>分布式操作系统：主要特点是分布性和并行性。系统中的各台计算机地位相同，任何工作都可以分布在这些 计算机上，由它们并行、协同完成这个任务。主要特点是分布性和并行性。系统中的各台计算机地位相同，任何工作都可以分布在这些 计算机上，由它们并行、协同完成这个任务。</li><li>个人计算机操作系统：如 Windows XP、MacOS，方便个人使用。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 408 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>线段树</title>
+      <link href="/2022/02/17/xian-duan-shu/"/>
+      <url>/2022/02/17/xian-duan-shu/</url>
+      
+        <content type="html"><![CDATA[<h6 id="线段树板子"><a href="#线段树板子" class="headerlink" title="线段树板子"></a>线段树板子</h6><p>线段树是一种二叉搜索树，与区间树相似，它将一个区间划分成一些单元区间，每个单元区间对应线段树中的一个叶结点。<br>使用线段树可以快速的查找某一个节点在若干条线段中出现的次数，时间复杂度为O(logN)。而未优化的空间复杂度为2N，实际应用时一般还要开4N的数组以免越界，因此有时需要离散化让空间压缩。</p><pre class="line-numbers language-none"><code class="language-none">#include&lt;iostream&gt;using namespace std;//查询int query_tree(int arr[],int tree[],int node,int start,int end,int L,int R){    printf("start = %d\n",start);    printf("end = %d\n",end);    printf("\n");    if(R &lt; start || L &gt; end)return 0;    else if(L &lt;= start &amp;&amp; end &gt;= R) return tree[node];    else if(start == end)return tree[node];    else{        int mid = (start + end) &gt;&gt; 1;        int left_node = 2 * node + 1;        int right_node = 2 * node + 2;        int sum_left = query_tree(arr,tree,left_node,start,mid,L,R);        int sum_right = query_tree(arr,tree,right_node,mid + 1,end,L,R);        return sum_left + sum_right;            }}//更新void update_tree(int arr[],int tree[],int node,int start,int end,int idx,int val){    if(start == end){        arr[idx] = val;        tree[node] = val;    }else{        int mid = (start + end) &gt;&gt; 1;        int left_node = 2 * node + 1 ;        int right_node = 2 * node + 2;        if(idx &gt;= start &amp;&amp; idx &lt;= mid)update_tree(arr,tree,left_node,start,mid,idx,val);        else update_tree(arr,tree,right_node,mid + 1,end,idx,val);        tree[node] = tree[left_node] + tree[right_node];    }}//建树void build_tree(int arr[],int tree[],int node,int start,int end){    if(start == end) tree[node] = arr[start];    else{        int mid = (start + end) &gt;&gt; 1;        int left_node = 2 * node + 1;        int right_node = 2 * node + 2;        build_tree(arr,tree,left_node,start,mid);        build_tree(arr,tree,right_node,mid + 1 ,end);        tree[node] = tree[left_node] + tree[right_node];    }}int main(){    int arr[] = {1,3,5,7,9,11};    int size = 6;    int tree[10000] = {0};    build_tree(arr,tree,0,0,size-1);     for(int i = 0;i &lt; 15;i++){        printf("tree[%d] = %d \n",i,tree[i]);    }    cout &lt;&lt; " "&lt;&lt; endl;    update_tree(arr,tree,0,0,size-1,4,6);    for(int i = 0;i &lt; 15;i++){        printf("tree[%d] = %d \n",i,tree[i]);    }    printf("s  = %d", query_tree(arr,tree,0,0,size-1,2,5));    return 0;}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>背包DP</title>
+      <link href="/2022/02/17/yan-shi-dp/"/>
+      <url>/2022/02/17/yan-shi-dp/</url>
+      
+        <content type="html"><![CDATA[<ol><li>01背包<pre class="line-numbers language-none"><code class="language-none">朴素: f[i][j] = max(f[i - 1][j],f[i - 1][j - v] + w)优化版: f[j] = max(f[j ],f[ j - v] + w)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li>完全背包<pre class="line-numbers language-none"><code class="language-none">f[ i ][j] = max(f[ i  -  1][j],f[i] [j - v] + w)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>待更中，后续会放出相应题目链接。。。</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java基本</title>
+      <link href="/2022/02/15/xie-fa/"/>
+      <url>/2022/02/15/xie-fa/</url>
+      
+        <content type="html"><![CDATA[<p>map集合之增强for循环遍历</p><pre class="line-numbers language-none"><code class="language-none">map.Entry&lt;String,Integer&gt; en : map.entrySet()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>map存数据</p><pre class="line-numbers language-none"><code class="language-none">map.put(i)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>方法获取指定 key 对应对 value，如果找不到 key ，则返回设置的默认值。</p><pre class="line-numbers language-none"><code class="language-none">map.put(i,map.getOrDefault(i,0) + 1);<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>待更中 。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/01/25/huan-jing-pei-zhi/"/>
+      <url>/2022/01/25/huan-jing-pei-zhi/</url>
+      
+        <content type="html"><![CDATA[<h4 id="windows下配置java"><a href="#windows下配置java" class="headerlink" title="windows下配置java"></a>windows下配置java</h4><p>检查Java安装是否成功 </p><pre class="line-numbers language-none"><code class="language-none">java -version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h5><p>高级系统设置点击环境变量 在 系统变量 新建<br>变量名: JAVA_HOME<br>变量值: 安装JDK的路径<br>在系统变量的Path中编辑新建</p><pre class="line-numbers language-none"><code class="language-none">%JAVA_HOME%\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="windows下配置tomcat"><a href="#windows下配置tomcat" class="headerlink" title="windows下配置tomcat"></a>windows下配置tomcat</h4><p>安装前提,安装了JDK<br>高级系统设置点击环境变量 在 系统变量 新建<br>变量名: CATALINA_HOME<br>变量值: 解压后Tomcat的文件夹路径</p><pre class="line-numbers language-none"><code class="language-none">例如 D:\apache-tomcat-9.0.12<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>在系统变量的Path中编辑新建</p><pre class="line-numbers language-none"><code class="language-none">%CATALINA_HOME%\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h5 id="Tomcat启动和验证配置环境变量是否成功"><a href="#Tomcat启动和验证配置环境变量是否成功" class="headerlink" title="Tomcat启动和验证配置环境变量是否成功"></a>Tomcat启动和验证配置环境变量是否成功</h5><p>Windows键+R，输入cmd，回车 ，输入：</p><pre class="line-numbers language-none"><code class="language-none">startup.bat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>之后出现了Tomcat的启动窗口，若没有报错或者一闪而过，那么说明启动成功了，让黑窗口保持运行，不能关，否则你的服务器也就关闭了，若出现了报错或者一闪而过(启动失败)，可能是你的端口被占用，Tomcat默认的端口是8080，出现这两种情况那么可以试试以下两种：<br>一、重启电脑后再次按以上步骤启动Tomcat尝试是否能解决；<br>二、修改Tomcat端口号后，再用以上步骤启动Tomcat。|| 修改端口号教程<br>之后验证环境变量是否配置成功，浏览器输入一下 </p><pre class="line-numbers language-none"><code class="language-none">http://localhost:8080 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>切记，黑窗口一定不能关闭，否则等于Tomcat也关了！！！</p><h4 id="Tomcat出现乱码"><a href="#Tomcat出现乱码" class="headerlink" title="Tomcat出现乱码"></a>Tomcat出现乱码</h4><p>在tomcat的conf文件夹下的logging-properties文件中找到</p><pre class="line-numbers language-none"><code class="language-none">java.util.logging.ConsoleHandler.encoding = UTF-8<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>修改为</p><pre class="line-numbers language-none"><code class="language-none">java.util.logging.ConsoleHandler.encoding = GBK<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h4 id="windows下mysql环境配置"><a href="#windows下mysql环境配置" class="headerlink" title="windows下mysql环境配置"></a>windows下mysql环境配置</h4><p>在环境变量的系统变量中输入填入mysql的bin文件夹目录</p><pre class="line-numbers language-none"><code class="language-none">例如: D:\mysql-8.0.28-winx64\bin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>Windows键+R，输入cmd，回车 ，输入：</p><pre class="line-numbers language-none"><code class="language-none">mysqld --initialize-insecure --user=mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>初始化数据库，并设置默认root为空，初始化完成后，在mysql根目录中会自动生成data文件<br>再输入</p><pre class="line-numbers language-none"><code class="language-none">mysqld -install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>为windows安装mysql服务，默认服务名为mysql<br>出现</p><pre class="line-numbers language-none"><code class="language-none">service successfully installed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>表示配置完成<br>启动数据库</p><pre class="line-numbers language-none"><code class="language-none">net start mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>输入</p><pre class="line-numbers language-none"><code class="language-none">mysql -u root -p <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>不用输入密码直接回车<br>设置mysql数据库密码为123456，输入：</p><pre class="line-numbers language-none"><code class="language-none">alter user user() identified by "123456";<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>关闭mysql数据库,输入：</p><pre class="line-numbers language-none"><code class="language-none">net stop mysql<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Git基础教程</title>
       <link href="/2022/01/22/git/"/>
       <url>/2022/01/22/git/</url>
