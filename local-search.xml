@@ -4,7 +4,7 @@
   
   
   <entry>
-    <title>Hexo + Github搭建个人博客</title>
+    <title>Hexo美化</title>
     <link href="/posts/f9cf0966/"/>
     <url>/posts/f9cf0966/</url>
     
@@ -23,6 +23,56 @@
       <tag>Hexo</tag>
       
       <tag>Fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Node.js安装及环境配置</title>
+    <link href="/posts/bf2d2902/"/>
+    <url>/posts/bf2d2902/</url>
+    
+    <content type="html"><![CDATA[<h1 id="node.js安装">1.Node.js安装</h1><p>Node.js安装地址 <a href="https://nodejs.org/zh-cn">Node.js(nodejs.org)</a></p><p>一路默认安装 查看node.js版本</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br></code></pre></td></tr></table></figure><p>查看 npm版本 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> -v<br></code></pre></td></tr></table></figure> # 2.修改全局模块路径和缓存路径 ##2.1在安装路径下新建文件夹 全局模块: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_global</span><br></code></pre></td></tr></table></figure> 缓存: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_cache</span><br></code></pre></td></tr></table></figure>同时在全局模块文件夹'node_global'里面新建一个文件夹，配置环境变量使用<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_modules</span><br></code></pre></td></tr></table></figure> ## 2.2 通过命令行修改保存位置win+R打开运行窗口，输入cmd，再输入以下两条指令 ### 2.2.1 npm config setprefix "创建的node_global文件夹所在路径" <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-built_in">set</span><span class="hljs-built_in"> prefix </span><span class="hljs-string">&quot;C:\Program Files\nodejs\node_global&quot;</span><br></code></pre></td></tr></table></figure> ### 2.2.2 npmconfig set cache "创建的node_cache文件夹所在路径" <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;C:\Program Files\nodejs\node_cache&quot;</span><br></code></pre></td></tr></table></figure> ## 2.3高级系统设置-----环境变量 ### 2.3.1系统变量中新建 变量名 + 变量值变量名: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">NODE_PATH</span><br></code></pre></td></tr></table></figure> 变量值: node_global文件夹下的node_modules文件夹<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs taggerscript">C:\Program Files<span class="hljs-symbol">\n</span>odejs<span class="hljs-symbol">\n</span>ode_global<span class="hljs-symbol">\n</span>ode_modules<br></code></pre></td></tr></table></figure> ### 2.3.2修改用户变量中的Path变量，将默认的npm路径修改为新建的node_global路径<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livescript">C:<span class="hljs-string">\Program</span> Files<span class="hljs-string">\nodejs\node_global</span><br></code></pre></td></tr></table></figure></p><h3id="在系统变量的path中添加node_path">2.3.3在系统变量的Path中添加NODE_PATH</h3><figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haml"><span class="hljs-tag">%<span class="hljs-selector-tag">NODE_PATH</span></span>%<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>环境配置</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>环境配置</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hexo安装</title>
+    <link href="/posts/dc9e160a/"/>
+    <url>/posts/dc9e160a/</url>
+    
+    <content type="html"><![CDATA[<h1 id="下载node.js">1.下载node.js</h1><h1id="下载githttpsgit-scm.comdownloads">2.下载githttps://git-scm.com/downloads</h1><p>一路默认即可</p><p>查看git版本号，显示表明安装成功</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">git -v</span><br></code></pre></td></tr></table></figure><h1 id="下载hexo">3.下载Hexo</h1><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">npm install hexo-<span class="hljs-keyword">cli</span> -g<br></code></pre></td></tr></table></figure><p>-g是全局</p><h1 id="github搭建仓库">4.Github搭建仓库</h1><h2 id="注册登入github">4.1注册/登入Github</h2><p>点击Create a new repository进入新建仓库页面 仓库名输入：</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">用户名<span class="hljs-string">.github.io</span><br></code></pre></td></tr></table></figure><p>勾选Public,拉到下面点击create创建 ## 4.2 生成SSH Keys进入任意文件夹，右键空白处然后点Git bash here,输入 <figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs excel">ssh-keygen -<span class="hljs-built_in">t</span> rsa -C <span class="hljs-string">&quot;邮件地址&quot;</span><br></code></pre></td></tr></table></figure>然后敲4次Enter⌨️</p><p>然后进入C:，在里面进入.ssh文件</p><p>用记事本打开里面的id_rsa.pub,全选复制里面的代码 ### 4.3 打开github进入用户设置，找到SSH keys;新建SSHkeys，名称随意，在下面粘贴代码;然后创建。 ### 4.4 测试是否成功 在gitbash中输入 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">ssh</span> -T git<span class="hljs-variable">@github</span>.com<br></code></pre></td></tr></table></figure> 回车，输入yes,出现successfuly代表成功 #5.本地生成博客内容 在喜欢位置新建文件Blog，然后进入文件夹</p><p>右键空白处然后点Git bash here，输入 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">hexo <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure> 若出现<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">fatal: unable <span class="hljs-keyword">to</span> <span class="hljs-keyword">access</span> <span class="hljs-string">&#x27;https://github.com/hexojs/hexo-starter.git/&#x27;</span>: SSL certificate problem: unable <span class="hljs-keyword">to</span> <span class="hljs-keyword">get</span> <span class="hljs-keyword">local</span> issuer certificate<br></code></pre></td></tr></table></figure>此情况，是由于没有配置信任的服务器HTTPS验证。默认，cURL被设为不信任任何CAs，就是说，它不信任任何服务器验证。只需要执行下面命令就可以解决： <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">git config --global http.sslVerify <span class="hljs-literal">false</span><br></code></pre></td></tr></table></figure> 安装后，输入命令生成文章<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo g</span><br></code></pre></td></tr></table></figure> 输入命令启动服务 <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">hexo s</span><br></code></pre></td></tr></table></figure> 默认情况下，访问网址为：<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">http:<span class="hljs-regexp">//</span>localhost:<span class="hljs-number">4000</span>/<br></code></pre></td></tr></table></figure> # 6.上传博客 ## 6.1安装自动部署发布工具 <figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ada">npm install hexo-deployer-git <span class="hljs-comment">--save</span><br></code></pre></td></tr></table></figure> ##6.2 修改 _config.yml 文件 在Blog文件夹的根目录中找到 _config.yml 文件,进入后下拉到底更改为下面的命令repository:去github之前生成的仓库页面点code，复制https链接<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs dts"><span class="hljs-symbol">deploy:</span><br><span class="hljs-symbol">  type:</span> git<br><span class="hljs-symbol">  repository:</span>https:<span class="hljs-comment">//github.com/axueli/axueli.github.io</span><br><span class="hljs-symbol">  branch:</span> main<br></code></pre></td></tr></table></figure> ## 6.3 git设置 设置Git用户名 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.name</span> <span class="hljs-string">&quot;Git用户名&quot;</span><br></code></pre></td></tr></table></figure>确认您正确设置了 Git 用户名： <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git config <span class="hljs-keyword">user</span>.name<br></code></pre></td></tr></table></figure> 设置提交电子邮箱地址<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">git config <span class="hljs-attr">--global</span> user<span class="hljs-selector-class">.email</span> <span class="hljs-string">&quot;邮箱名&quot;</span><br></code></pre></td></tr></table></figure> 确认在 Git 中正确设置了电子邮件地址： <figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs lua">git <span class="hljs-built_in">config</span> <span class="hljs-comment">--global user.email</span><br></code></pre></td></tr></table></figure> #7.域名绑定</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hexo</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
       
     </tags>
     

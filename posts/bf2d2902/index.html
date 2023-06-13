@@ -18,27 +18,26 @@
   <meta name="author" content="🍐啊、雪梨QAQ">
   <meta name="keywords" content="算法,ACM">
   
-    <meta name="description" content="Hexo美化">
+    <meta name="description" content="Node.js安装及环境配置">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo美化">
-<meta property="og:url" content="https://190210.xyz/posts/f9cf0966/index.html">
+<meta property="og:title" content="Node.js安装及环境配置">
+<meta property="og:url" content="https://190210.xyz/posts/bf2d2902/index.html">
 <meta property="og:site_name" content="🍐啊、雪梨の博客网站">
-<meta property="og:description" content="Hexo美化">
+<meta property="og:description" content="Node.js安装及环境配置">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.eririspace.cn/pageimages/Goldflake_3.jpg">
-<meta property="article:published_time" content="2023-06-13T04:25:52.374Z">
-<meta property="article:modified_time" content="2023-06-13T03:59:59.765Z">
+<meta property="og:image" content="https://190210.xyz/img/404.jpg">
+<meta property="article:published_time" content="2023-06-13T04:16:02.766Z">
+<meta property="article:modified_time" content="2023-06-13T04:29:01.224Z">
 <meta property="article:author" content="🍐啊、雪梨QAQ">
-<meta property="article:tag" content="Hexo">
-<meta property="article:tag" content="Fluid">
+<meta property="article:tag" content="环境配置">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.eririspace.cn/pageimages/Goldflake_3.jpg">
+<meta name="twitter:image" content="https://190210.xyz/img/404.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Hexo美化 - 🍐啊、雪梨の博客网站</title>
+  <title>Node.js安装及环境配置 - 🍐啊、雪梨の博客网站</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -274,13 +273,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://www.eririspace.cn/pageimages/Goldflake_3.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/404.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hexo美化"></span>
+            <span id="subtitle" data-typed-text="Node.js安装及环境配置"></span>
           
         </div>
 
@@ -296,7 +295,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-06-13 12:25" pubdate>
+        <time datetime="2023-06-13 12:16" pubdate>
           2023年6月13日 中午
         </time>
       </span>
@@ -308,7 +307,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          726 字
         
       </span>
     
@@ -319,7 +318,7 @@
         
         
         
-          12 分钟
+          7 分钟
         
       </span>
     
@@ -369,12 +368,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hexo美化</h1>
+            <h1 style="display: none">Node.js安装及环境配置</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：30 分钟前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -382,20 +381,26 @@
             
               <div class="markdown-body">
                 
-                <div class="note note-success">
-            <p>添加网站运行时间 页脚添加网站运行时间，只需要在主题配置中的 footer:content 添加：</p>
-          </div>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs xml">footer:<br>  content: &#x27;<br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;timeDate&quot;</span>&gt;</span>载入天数...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;times&quot;</span>&gt;</span>载入时分秒...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/js/duration.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  &#x27;<br></code></pre></td></tr></table></figure>
-<p>之后在主题目录下创建 source/js/duration.js，内容如下：</p>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs arcade"><span class="hljs-keyword">var</span> <span class="hljs-built_in">now</span> = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>();<br><span class="hljs-keyword">function</span> <span class="hljs-title function_">createtime</span>(<span class="hljs-params"></span>) &#123;<br>    <span class="hljs-keyword">var</span> grt= <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-string">&quot;03/03/2021 12:00:00&quot;</span>);<span class="hljs-comment">//在此处修改你的建站时间，格式：月/日/年 时:分:秒</span><br>    <span class="hljs-built_in">now</span>.setTime(<span class="hljs-built_in">now</span>.getTime()+<span class="hljs-number">250</span>);<br>    days = (<span class="hljs-built_in">now</span> - grt ) / <span class="hljs-number">1000</span> / <span class="hljs-number">60</span> / <span class="hljs-number">60</span> / <span class="hljs-number">24</span>; dnum = Math.<span class="hljs-built_in">floor</span>(days);<br>    hours = (<span class="hljs-built_in">now</span> - grt ) / <span class="hljs-number">1000</span> / <span class="hljs-number">60</span> / <span class="hljs-number">60</span> - (<span class="hljs-number">24</span> * dnum); hnum = Math.<span class="hljs-built_in">floor</span>(hours);<br>    <span class="hljs-keyword">if</span>(String(hnum).<span class="hljs-built_in">length</span> ==<span class="hljs-number">1</span> )&#123;hnum = <span class="hljs-string">&quot;0&quot;</span> + hnum;&#125; minutes = (<span class="hljs-built_in">now</span> - grt ) / <span class="hljs-number">1000</span> /<span class="hljs-number">60</span> - (<span class="hljs-number">24</span> * <span class="hljs-number">60</span> * dnum) - (<span class="hljs-number">60</span> * hnum);<br>    mnum = Math.<span class="hljs-built_in">floor</span>(minutes); <span class="hljs-keyword">if</span>(String(mnum).<span class="hljs-built_in">length</span> ==<span class="hljs-number">1</span> )&#123;mnum = <span class="hljs-string">&quot;0&quot;</span> + mnum;&#125;<br>    seconds = (<span class="hljs-built_in">now</span> - grt ) / <span class="hljs-number">1000</span> - (<span class="hljs-number">24</span> * <span class="hljs-number">60</span> * <span class="hljs-number">60</span> * dnum) - (<span class="hljs-number">60</span> * <span class="hljs-number">60</span> * hnum) - (<span class="hljs-number">60</span> * mnum);<br>    snum = Math.<span class="hljs-built_in">round</span>(seconds); <span class="hljs-keyword">if</span>(String(snum).<span class="hljs-built_in">length</span> ==<span class="hljs-number">1</span> )&#123;snum = <span class="hljs-string">&quot;0&quot;</span> + snum;&#125;<br>    document.getElementById(<span class="hljs-string">&quot;timeDate&quot;</span>).innerHTML = <span class="hljs-string">&quot;本站已安全运行 &quot;</span>+dnum+<span class="hljs-string">&quot; 天 &quot;</span>;<br>    document.getElementById(<span class="hljs-string">&quot;times&quot;</span>).innerHTML = hnum + <span class="hljs-string">&quot; 小时 &quot;</span> + mnum + <span class="hljs-string">&quot; 分 &quot;</span> + snum + <span class="hljs-string">&quot; 秒&quot;</span>;<br>&#125;<br>setInterval(<span class="hljs-string">&quot;createtime()&quot;</span>,<span class="hljs-number">250</span>);<br></code></pre></td></tr></table></figure>
-<p>将建站时间修改为你自己的建站时间，即可在页脚加入网站运行时间。</p>
-<p>添加 GitHub 日历热力图 这里提供一个简单的 API Github Chart API</p>
-<p>直接在需要的位置添加如下 HTML 语句即可，注意将 GitHub
-用户名修改为你自己的。</p>
-<p><img src="https://ghchart.rshah.org/axueli" srcset="/img/loading.gif" lazyload alt="axueli's Github chart" />
-效果如下所示：</p>
-<p>也可以改变颜色，只需要修改为 hex 颜色代码即可</p>
-<p><img src="https://ghchart.rshah.org/409ba5/axueli" srcset="/img/loading.gif" lazyload alt="axueli's Github chart" /></p>
+                <h1 id="node.js安装">1.Node.js安装</h1>
+<p>Node.js安装地址 <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">Node.js
+(nodejs.org)</a></p>
+<p>一路默认安装 查看node.js版本</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">-v</span><br></code></pre></td></tr></table></figure>
+<p>查看 npm版本 <figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> -v<br></code></pre></td></tr></table></figure> # 2.修改全局模块路径和缓存路径 ##
+2.1在安装路径下新建文件夹 全局模块: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_global</span><br></code></pre></td></tr></table></figure> 缓存: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_cache</span><br></code></pre></td></tr></table></figure>
+同时在全局模块文件夹'node_global'里面新建一个文件夹，配置环境变量使用
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">node_modules</span><br></code></pre></td></tr></table></figure> ## 2.2 通过命令行修改保存位置
+win+R打开运行窗口，输入cmd，再输入以下两条指令 ### 2.2.1 npm config set
+prefix "创建的node_global文件夹所在路径" <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-built_in">set</span><span class="hljs-built_in"> prefix </span><span class="hljs-string">&quot;C:\Program Files\nodejs\node_global&quot;</span><br></code></pre></td></tr></table></figure> ### 2.2.2 npm
+config set cache "创建的node_cache文件夹所在路径" <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">npm<span class="hljs-built_in"> config </span><span class="hljs-built_in">set</span> cache <span class="hljs-string">&quot;C:\Program Files\nodejs\node_cache&quot;</span><br></code></pre></td></tr></table></figure> ## 2.3
+高级系统设置-----环境变量 ### 2.3.1系统变量中新建 变量名 + 变量值
+变量名: <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs ebnf"><span class="hljs-attribute">NODE_PATH</span><br></code></pre></td></tr></table></figure> 变量值: node_global文件夹下的node_modules文件夹
+<figure class="highlight taggerscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs taggerscript">C:\Program Files<span class="hljs-symbol">\n</span>odejs<span class="hljs-symbol">\n</span>ode_global<span class="hljs-symbol">\n</span>ode_modules<br></code></pre></td></tr></table></figure> ### 2.3.2
+修改用户变量中的Path变量，将默认的npm路径修改为新建的node_global路径
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livescript">C:<span class="hljs-string">\Program</span> Files<span class="hljs-string">\nodejs\node_global</span><br></code></pre></td></tr></table></figure></p>
+<h3
+id="在系统变量的path中添加node_path">2.3.3在系统变量的Path中添加NODE_PATH</h3>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haml"><span class="hljs-tag">%<span class="hljs-selector-tag">NODE_PATH</span></span>%<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -414,7 +419,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Hexo/" class="category-chain-item">Hexo</a>
+  <a href="/categories/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="category-chain-item">环境配置</a>
   
   
 
@@ -429,9 +434,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Hexo/">#Hexo</a>
-      
-        <a href="/tags/Fluid/">#Fluid</a>
+        <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">#环境配置</a>
       
     </div>
   
@@ -440,7 +443,7 @@
 
               <p class="note note-warning">
                 <strong>本文作者: </strong><a href="/">🍐啊、雪梨QAQ</a> <br>
-                <strong>本文链接: </strong><a href="https://190210.xyz/posts/f9cf0966/">https://190210.xyz/posts/f9cf0966/</a> <br>
+                <strong>本文链接: </strong><a href="https://190210.xyz/posts/bf2d2902/">https://190210.xyz/posts/bf2d2902/</a> <br>
                 <strong>版权声明: </strong><b>版权声明：</b> 本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-NC-SA 4.0 协议</a> ，转载请注明出处！
                    </p>
                    
@@ -449,12 +452,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/posts/f9cf0966/" title="Hexo美化">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hexo美化</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/posts/bf2d2902/" title="Node.js安装及环境配置">
-                        <span class="hidden-mobile">Node.js安装及环境配置</span>
+                      <a href="/posts/dc9e160a/" title="Hexo安装">
+                        <span class="hidden-mobile">Hexo安装</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
